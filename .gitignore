@@ -1,0 +1,65 @@
+# =====================================================
+# EDGEMIND .gitignore
+# =====================================================
+
+# --- CRITICAL: LLM Model Files (NEVER commit — multi-GB) ---
+*.gguf
+*.ggml
+*.safetensors
+*.pt
+*.pth
+models/
+
+# --- Android Build Outputs ---
+build/
+app/build/
+*/build/
+.gradle/
+local.properties
+*.ap_
+*.apk
+*.aab
+*.apks
+
+# --- NDK / CMake Build Artifacts ---
+.cxx/
+*.so
+*.o
+*.a
+CMakeFiles/
+cmake_install.cmake
+CMakeCache.txt
+
+# --- Android Studio / IntelliJ ---
+.idea/
+*.iml
+*.iws
+*.ipr
+.navigation/
+captures/
+.externalNativeBuild/
+
+# --- Gradle ---
+!gradle/wrapper/gradle-wrapper.jar
+.gradletasknamecache
+gradle-app.setting
+
+# --- Sensitive / Device-Specific ---
+*.jks
+*.keystore
+keystore.properties
+google-services.json
+fabric.properties
+
+# --- EdgeMind Phase Experiment Outputs ---
+# (these live on the device, not in the repo)
+phase9_redux/
+exp_*_result.txt
+thermal_*.csv
+*.log
+
+# --- OS Noise ---
+.DS_Store
+Thumbs.db
+*.swp
+*~
