@@ -63,3 +63,6 @@ thermal_*.csv
 Thumbs.db
 *.swp
 *~
+
+# Local Android/JDK toolchain
+.toolchain/
