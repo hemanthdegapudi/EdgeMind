@@ -1,0 +1,114 @@
+[2026-08-27 20:40:32] ============================================
+[2026-08-27 20:40:32]  EdgeMind Phase 9 Benchmark
+[2026-08-27 20:40:32]  Thu Aug 27 08:40:32 PM IST 2026
+[2026-08-27 20:40:32] ============================================
+[2026-08-27 20:40:32] Device: Redmi K20 Pro
+[2026-08-27 20:40:33] Android: 11
+[2026-08-27 20:40:33] Model: -rw-rw---- 1 shell shell 2104932768 2026-08-27 19:46 /data/local/tmp/qwen2.5-3b-instruct-q4_k_m.gguf
+[2026-08-27 20:40:33] Binary: -rwxrwxrwx 1 shell shell 7168 2026-08-23 11:06 /data/local/tmp/llama-cli
+[2026-08-27 20:40:33] Results dir: ./phase9_results/run_20260827_204032
+[2026-08-27 20:40:33] Repetitions per experiment: 3
+[2026-08-27 20:40:33] 
+[2026-08-27 20:40:33] 
+[2026-08-27 20:40:33] ╔═══════════════════════════════════════════════════════╗
+[2026-08-27 20:40:33] ║  EXPERIMENT: EXP-D  |  Mask: c0  |  Threads: 2
+[2026-08-27 20:40:33] ╚═══════════════════════════════════════════════════════╝
+[2026-08-27 20:40:33] ═══════════════════════════════════════════════════
+[2026-08-27 20:40:33]  EXP-D_rep1: mask=c0 threads=2 [20260827_204033]
+[2026-08-27 20:40:33] ═══════════════════════════════════════════════════
+[2026-08-27 20:40:33] [EXP-D_rep1] THERMAL GATE — waiting for CPU < 45000mC and Battery < 40000mC
+[2026-08-27 20:40:35] [EXP-D_rep1] GATE CLEAR ✅ (CPU=42000mC, Batt=35200mC, waited=0s)
+[2026-08-27 20:40:37] [EXP-D_rep1] PRE: MemAvail=1718208kB CPU=41300mC Batt=35200mC
+[2026-08-27 20:40:37] [EXP-D_rep1] CMD: LD_LIBRARY_PATH=/data/local/tmp taskset c0 /data/local/tmp/llama-cli -m /data/local/tmp/qwen2.5-3b-instruct-q4_k_m.gguf -t 2 -p "What is artificial intelligence? Explain briefly." -n 50 -c 512 --seed 42 --temp 0 --single-turn --perf --no-display-prompt --no-warmup --log-disable 2>&1
+[2026-08-27 20:40:37] [EXP-D_rep1] INFERENCE START
+[2026-08-27 20:40:41] [EXP-D_rep1] DONE (0s) eval_tps=null prompt_tps=null valid=false
+[2026-08-27 20:40:41] ═══════════════════════════════════════════════════
+[2026-08-27 20:40:41]  EXP-D_rep2: mask=c0 threads=2 [20260827_204041]
+[2026-08-27 20:40:41] ═══════════════════════════════════════════════════
+[2026-08-27 20:40:41] [EXP-D_rep2] THERMAL GATE — waiting for CPU < 45000mC and Battery < 40000mC
+[2026-08-27 20:40:43] [EXP-D_rep2] GATE CLEAR ✅ (CPU=42000mC, Batt=35200mC, waited=0s)
+[2026-08-27 20:40:46] [EXP-D_rep2] PRE: MemAvail=1716584kB CPU=42000mC Batt=35200mC
+[2026-08-27 20:40:46] [EXP-D_rep2] CMD: LD_LIBRARY_PATH=/data/local/tmp taskset c0 /data/local/tmp/llama-cli -m /data/local/tmp/qwen2.5-3b-instruct-q4_k_m.gguf -t 2 -p "What is artificial intelligence? Explain briefly." -n 50 -c 512 --seed 42 --temp 0 --single-turn --perf --no-display-prompt --no-warmup --log-disable 2>&1
+[2026-08-27 20:40:46] [EXP-D_rep2] INFERENCE START
+[2026-08-27 20:40:50] [EXP-D_rep2] DONE (0s) eval_tps=null prompt_tps=null valid=false
+[2026-08-27 20:40:50] ═══════════════════════════════════════════════════
+[2026-08-27 20:40:50]  EXP-D_rep3: mask=c0 threads=2 [20260827_204050]
+[2026-08-27 20:40:50] ═══════════════════════════════════════════════════
+[2026-08-27 20:40:50] [EXP-D_rep3] THERMAL GATE — waiting for CPU < 45000mC and Battery < 40000mC
+[2026-08-27 20:40:52] [EXP-D_rep3] GATE CLEAR ✅ (CPU=42400mC, Batt=35200mC, waited=0s)
+[2026-08-27 20:40:54] [EXP-D_rep3] PRE: MemAvail=1715628kB CPU=41700mC Batt=35200mC
+[2026-08-27 20:40:54] [EXP-D_rep3] CMD: LD_LIBRARY_PATH=/data/local/tmp taskset c0 /data/local/tmp/llama-cli -m /data/local/tmp/qwen2.5-3b-instruct-q4_k_m.gguf -t 2 -p "What is artificial intelligence? Explain briefly." -n 50 -c 512 --seed 42 --temp 0 --single-turn --perf --no-display-prompt --no-warmup --log-disable 2>&1
+[2026-08-27 20:40:54] [EXP-D_rep3] INFERENCE START
+[2026-08-27 20:40:58] [EXP-D_rep3] DONE (0s) eval_tps=null prompt_tps=null valid=false
+[2026-08-27 20:40:58] 
+[2026-08-27 20:40:58] ╔═══════════════════════════════════════════════════════╗
+[2026-08-27 20:40:58] ║  EXPERIMENT: EXP-E  |  Mask: 0f  |  Threads: 4
+[2026-08-27 20:40:58] ╚═══════════════════════════════════════════════════════╝
+[2026-08-27 20:40:58] ═══════════════════════════════════════════════════
+[2026-08-27 20:40:58]  EXP-E_rep1: mask=0f threads=4 [20260827_204058]
+[2026-08-27 20:40:58] ═══════════════════════════════════════════════════
+[2026-08-27 20:40:58] [EXP-E_rep1] THERMAL GATE — waiting for CPU < 45000mC and Battery < 40000mC
+[2026-08-27 20:41:00] [EXP-E_rep1] GATE CLEAR ✅ (CPU=42400mC, Batt=35200mC, waited=0s)
+[2026-08-27 20:41:02] [EXP-E_rep1] PRE: MemAvail=1715596kB CPU=42400mC Batt=35200mC
+[2026-08-27 20:41:02] [EXP-E_rep1] CMD: LD_LIBRARY_PATH=/data/local/tmp taskset 0f /data/local/tmp/llama-cli -m /data/local/tmp/qwen2.5-3b-instruct-q4_k_m.gguf -t 4 -p "What is artificial intelligence? Explain briefly." -n 50 -c 512 --seed 42 --temp 0 --single-turn --perf --no-display-prompt --no-warmup --log-disable 2>&1
+[2026-08-27 20:41:02] [EXP-E_rep1] INFERENCE START
+[2026-08-27 20:42:13] [EXP-E_rep1] DONE (67s) eval_tps=1.4 prompt_tps=1.9 valid=true
+[2026-08-27 20:42:13] ═══════════════════════════════════════════════════
+[2026-08-27 20:42:13]  EXP-E_rep2: mask=0f threads=4 [20260827_204213]
+[2026-08-27 20:42:13] ═══════════════════════════════════════════════════
+[2026-08-27 20:42:13] [EXP-E_rep2] THERMAL GATE — waiting for CPU < 45000mC and Battery < 40000mC
+[2026-08-27 20:42:15] [EXP-E_rep2] Gate: CPU=45900mC, Batt=35500mC — waiting 15s...
+[2026-08-27 20:42:32] [EXP-E_rep2] GATE CLEAR ✅ (CPU=44000mC, Batt=35700mC, waited=15s)
+[2026-08-27 20:42:34] [EXP-E_rep2] PRE: MemAvail=2340276kB CPU=44400mC Batt=35700mC
+[2026-08-27 20:42:34] [EXP-E_rep2] CMD: LD_LIBRARY_PATH=/data/local/tmp taskset 0f /data/local/tmp/llama-cli -m /data/local/tmp/qwen2.5-3b-instruct-q4_k_m.gguf -t 4 -p "What is artificial intelligence? Explain briefly." -n 50 -c 512 --seed 42 --temp 0 --single-turn --perf --no-display-prompt --no-warmup --log-disable 2>&1
+[2026-08-27 20:42:34] [EXP-E_rep2] INFERENCE START
+[2026-08-27 20:43:39] [EXP-E_rep2] DONE (61s) eval_tps=1.4 prompt_tps=2.0 valid=true
+[2026-08-27 20:43:39] ═══════════════════════════════════════════════════
+[2026-08-27 20:43:39]  EXP-E_rep3: mask=0f threads=4 [20260827_204339]
+[2026-08-27 20:43:39] ═══════════════════════════════════════════════════
+[2026-08-27 20:43:39] [EXP-E_rep3] THERMAL GATE — waiting for CPU < 45000mC and Battery < 40000mC
+[2026-08-27 20:43:41] [EXP-E_rep3] Gate: CPU=45500mC, Batt=35500mC — waiting 15s...
+[2026-08-27 20:43:58] [EXP-E_rep3] GATE CLEAR ✅ (CPU=44000mC, Batt=35700mC, waited=15s)
+[2026-08-27 20:44:01] [EXP-E_rep3] PRE: MemAvail=2484424kB CPU=42800mC Batt=35700mC
+[2026-08-27 20:44:01] [EXP-E_rep3] CMD: LD_LIBRARY_PATH=/data/local/tmp taskset 0f /data/local/tmp/llama-cli -m /data/local/tmp/qwen2.5-3b-instruct-q4_k_m.gguf -t 4 -p "What is artificial intelligence? Explain briefly." -n 50 -c 512 --seed 42 --temp 0 --single-turn --perf --no-display-prompt --no-warmup --log-disable 2>&1
+[2026-08-27 20:44:01] [EXP-E_rep3] INFERENCE START
+[2026-08-27 20:45:04] [EXP-E_rep3] DONE (59s) eval_tps=1.4 prompt_tps=2.0 valid=true
+[2026-08-27 20:45:04] 
+[2026-08-27 20:45:04] ╔═══════════════════════════════════════════════════════╗
+[2026-08-27 20:45:04] ║  EXPERIMENT: EXP-F  |  Mask: none  |  Threads: 6
+[2026-08-27 20:45:04] ╚═══════════════════════════════════════════════════════╝
+[2026-08-27 20:45:04] ═══════════════════════════════════════════════════
+[2026-08-27 20:45:04]  EXP-F_rep1: mask=none threads=6 [20260827_204504]
+[2026-08-27 20:45:04] ═══════════════════════════════════════════════════
+[2026-08-27 20:45:04] [EXP-F_rep1] THERMAL GATE — waiting for CPU < 45000mC and Battery < 40000mC
+[2026-08-27 20:45:06] [EXP-F_rep1] Gate: CPU=45500mC, Batt=35700mC — waiting 15s...
+[2026-08-27 20:45:23] [EXP-F_rep1] Gate: CPU=47100mC, Batt=35700mC — waiting 15s...
+[2026-08-27 20:45:40] [EXP-F_rep1] GATE CLEAR ✅ (CPU=43200mC, Batt=35700mC, waited=30s)
+[2026-08-27 20:45:43] [EXP-F_rep1] PRE: MemAvail=2672632kB CPU=43200mC Batt=35700mC
+[2026-08-27 20:45:43] [EXP-F_rep1] CMD: LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/llama-cli -m /data/local/tmp/qwen2.5-3b-instruct-q4_k_m.gguf -t 6 -p "What is artificial intelligence? Explain briefly." -n 50 -c 512 --seed 42 --temp 0 --single-turn --perf --no-display-prompt --no-warmup --log-disable 2>&1
+[2026-08-27 20:45:43] [EXP-F_rep1] INFERENCE START
+[2026-08-27 20:46:03] [EXP-F_rep1] DONE (16s) eval_tps=5.0 prompt_tps=8.4 valid=true
+[2026-08-27 20:46:03] ═══════════════════════════════════════════════════
+[2026-08-27 20:46:03]  EXP-F_rep2: mask=none threads=6 [20260827_204603]
+[2026-08-27 20:46:03] ═══════════════════════════════════════════════════
+[2026-08-27 20:46:03] [EXP-F_rep2] THERMAL GATE — waiting for CPU < 45000mC and Battery < 40000mC
+[2026-08-27 20:46:05] [EXP-F_rep2] Gate: CPU=49800mC, Batt=36500mC — waiting 15s...
+[2026-08-27 20:46:22] [EXP-F_rep2] GATE CLEAR ✅ (CPU=44000mC, Batt=36000mC, waited=15s)
+[2026-08-27 20:46:24] [EXP-F_rep2] PRE: MemAvail=2658916kB CPU=44400mC Batt=36000mC
+[2026-08-27 20:46:24] [EXP-F_rep2] CMD: LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/llama-cli -m /data/local/tmp/qwen2.5-3b-instruct-q4_k_m.gguf -t 6 -p "What is artificial intelligence? Explain briefly." -n 50 -c 512 --seed 42 --temp 0 --single-turn --perf --no-display-prompt --no-warmup --log-disable 2>&1
+[2026-08-27 20:46:24] [EXP-F_rep2] INFERENCE START
+[2026-08-27 20:46:46] [EXP-F_rep2] DONE (18s) eval_tps=4.9 prompt_tps=7.3 valid=true
+[2026-08-27 20:46:46] ═══════════════════════════════════════════════════
+[2026-08-27 20:46:46]  EXP-F_rep3: mask=none threads=6 [20260827_204646]
+[2026-08-27 20:46:46] ═══════════════════════════════════════════════════
+[2026-08-27 20:46:46] [EXP-F_rep3] THERMAL GATE — waiting for CPU < 45000mC and Battery < 40000mC
+[2026-08-27 20:46:48] [EXP-F_rep3] Gate: CPU=50500mC, Batt=36200mC — waiting 15s...
+[2026-08-27 20:47:05] [EXP-F_rep3] GATE CLEAR ✅ (CPU=44800mC, Batt=36200mC, waited=15s)
+[2026-08-27 20:47:07] [EXP-F_rep3] PRE: MemAvail=2659984kB CPU=44800mC Batt=36200mC
+[2026-08-27 20:47:07] [EXP-F_rep3] CMD: LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/llama-cli -m /data/local/tmp/qwen2.5-3b-instruct-q4_k_m.gguf -t 6 -p "What is artificial intelligence? Explain briefly." -n 50 -c 512 --seed 42 --temp 0 --single-turn --perf --no-display-prompt --no-warmup --log-disable 2>&1
+[2026-08-27 20:47:07] [EXP-F_rep3] INFERENCE START
+[2026-08-27 20:47:29] [EXP-F_rep3] DONE (18s) eval_tps=4.9 prompt_tps=7.3 valid=true
+[2026-08-27 20:47:29] 
+[2026-08-27 20:47:29] ════════════════════════════════════════════
+[2026-08-27 20:47:29]   ALL EXPERIMENTS COMPLETED at Thu Aug 27 08:47:29 PM IST 2026
+[2026-08-27 20:47:29] ════════════════════════════════════════════
