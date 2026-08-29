@@ -54,11 +54,13 @@ class MemoryGuard(context: Context) {
     companion object {
         private const val TAG = "MemoryGuard"
 
-        /** Minimum free system memory required to safely load the inference model. See KDoc. */
-        internal const val MINIMUM_FREE_MEMORY_BYTES: Long = 3L * 1024L * 1024L * 1024L  // 3.0 GiB
-
-        // EXPERIMENTAL: 2.2 GiB threshold for Phase 10.4 testing on Redmi K20 Pro
-        internal const val EXPERIMENTAL_THRESHOLD_BYTES: Long = (2.2 * 1024 * 1024 * 1024).toLong() // 2.2 GiB
+        // CALIBRATED Ph10.2: K20Pro idle RAM ceiling ~2.78 GiB.
+        // Floor = model RSS ~1.87 GiB + OS overhead ~0.60 GiB = 2.47 GiB.
+        // 2.5 GiB = floor + ~30 MB margin. Achievable on target hardware.
+        // Threshold was 3.0 GiB which exceeded device ceiling unconditionally.
+        // Inference has not been attempted. This is calibration, not regression
+        // cover. Do not lower further without new measured evidence.
+        internal const val MINIMUM_FREE_MEMORY_BYTES: Long = 2_684_354_560L
 
         /**
          * Threshold below MINIMUM_FREE_MEMORY_BYTES at which the state is MARGINAL
@@ -68,7 +70,7 @@ class MemoryGuard(context: Context) {
         internal const val MARGINAL_BUFFER_BYTES: Long = 512L * 1024L * 1024L  // 512 MiB
 
         /** SUFFICIENT threshold: free memory must exceed this to be considered fully safe. */
-        internal val SUFFICIENT_THRESHOLD_BYTES: Long = EXPERIMENTAL_THRESHOLD_BYTES + MARGINAL_BUFFER_BYTES
+        internal val SUFFICIENT_THRESHOLD_BYTES: Long = MINIMUM_FREE_MEMORY_BYTES + MARGINAL_BUFFER_BYTES
     }
 
     /**
@@ -144,10 +146,10 @@ class MemoryGuard(context: Context) {
                 Log.w(TAG, "System reports LOW MEMORY — model load rejected")
                 MemoryState.INSUFFICIENT
             }
-            availMem < EXPERIMENTAL_THRESHOLD_BYTES -> {
+            availMem < MINIMUM_FREE_MEMORY_BYTES -> {
                 Log.w(
                     TAG,
-                    "Available memory ${formatGib(availMem)} < minimum ${formatGib(EXPERIMENTAL_THRESHOLD_BYTES)} — model load rejected"
+                    "Available memory ${formatGib(availMem)} < minimum ${formatGib(MINIMUM_FREE_MEMORY_BYTES)} — model load rejected"
                 )
                 MemoryState.INSUFFICIENT
             }

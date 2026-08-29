@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        FOREGROUND_SERVICE: Required to call Service.startForeground().
+        Without this, startForeground() throws a SecurityException.
+        Concrete use: InferenceForegroundService.onStartCommand() → startForeground().
+    -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <!--
+        FOREGROUND_SERVICE_DATA_SYNC: Required on Android 14+ (API 34) for foreground
+        services that perform data processing (inference is classified as data processing
+        rather than media playback or location tracking).
+        Concrete use: InferenceForegroundService foregroundServiceType="dataSync".
+    -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+
+    <!--
+        POST_NOTIFICATIONS: Required on API 33+ (Android 13) to post notifications.
+        Foreground services require posting a notification. Without this permission,
+        the notification is silently dropped on API 33+ and the foreground service
+        promotion fails on some OEM implementations.
+        Concrete use: InferenceForegroundService.buildNotification().
+    -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+
+    <!--
+        RECEIVE_BOOT_COMPLETED: NOT declared.
+        Boot recovery is explicitly deferred. If a future phase requires boot recovery,
+        the implementation path is:
+          BOOT_COMPLETED → BootReceiver → startForegroundService(InferenceForegroundService)
+        That implementation does not exist in Phase 10.
+    -->
+
+
+
+    <application
+        android:name=".EdgeMindApplication"
+        android:allowBackup="false"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:extractNativeLibs="true">
+
+        <!-- SECURITY FLAG: exported=true with no permission.
+             TRACKED: GitHub Issue #42.
+             BLOCK: Must be resolved before any non-dev APK build.
+             RISK: Any installed app can start inference service. -->
+        <service
+            android:name=".service.InferenceForegroundService"
+            android:exported="true"
+            android:foregroundServiceType="dataSync" />
+
+    </application>
+
+</manifest>
