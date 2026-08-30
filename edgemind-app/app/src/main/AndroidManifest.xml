@@ -42,6 +42,7 @@
         android:name=".EdgeMindApplication"
         android:allowBackup="false"
         android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat"
         android:supportsRtl="true"
         android:extractNativeLibs="true">
 
