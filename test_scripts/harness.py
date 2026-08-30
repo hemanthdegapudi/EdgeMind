@@ -143,22 +143,56 @@ class Harness:
     def run_adb_shell(self, shell_cmd: str, timeout: Optional[int] = None) -> subprocess.CompletedProcess:
         return self.run_cmd(["adb", "shell", shell_cmd], timeout)
 
+    def get_pid(self) -> Optional[int]:
+        result = self.run_adb_shell("pidof com.edgemind.app", timeout=5).stdout.strip()
+        if result.isdigit():
+            return int(result)
+        return None
+
+    def start_fresh_process(self) -> int:
+        self.log("Crashing existing process to ensure fresh state...")
+        self.run_adb_shell("am crash com.edgemind.app", timeout=10)
+        time.sleep(2)
+        self.log("Starting fresh process...")
+        self.run_adb_shell("am start-foreground-service -n com.edgemind.app/.service.InferenceForegroundService", timeout=10)
+        time.sleep(3)
+        pid = self.get_pid()
+        if not pid:
+            raise Exception("Failed to start fresh EdgeMind process")
+        self.current_pid = pid
+        self.log(f"Started fresh process with PID: {pid}")
+        return pid
+
     def get_device_metrics(self) -> Dict[str, Any]:
         metrics = {}
         try:
-            meminfo = self.run_adb_shell("dumpsys meminfo com.edgemind.app", timeout=5).stdout
-            rss_match = re.search(r"TOTAL RSS:\s+(\d+)", meminfo)
-            metrics["rss_kb"] = int(rss_match.group(1)) if rss_match else "UNAVAILABLE"
+            actual_pid = self.get_pid()
             
-            pss_match = re.search(r"TOTAL PSS:\s+(\d+)", meminfo)
-            metrics["pss_kb"] = int(pss_match.group(1)) if pss_match else "UNAVAILABLE"
+            expected_pid = getattr(self, 'current_pid', None)
+            if expected_pid is not None:
+                if actual_pid != expected_pid:
+                    metrics["pid_match"] = False
+                    metrics["error"] = f"PID changed or died! Expected {expected_pid}, got {actual_pid}"
+                    metrics["measurement_status"] = "FAILED"
+                    return metrics
+                metrics["pid_match"] = True
+            
+            metrics["pid"] = actual_pid if actual_pid else "UNAVAILABLE"
+            
+            if actual_pid:
+                meminfo = self.run_adb_shell(f"dumpsys meminfo {actual_pid}", timeout=5).stdout
+                rss_match = re.search(r"TOTAL RSS:\s+(\d+)", meminfo)
+                metrics["rss_kb"] = int(rss_match.group(1)) if rss_match else "UNAVAILABLE"
+                
+                pss_match = re.search(r"TOTAL PSS:\s+(\d+)", meminfo)
+                metrics["pss_kb"] = int(pss_match.group(1)) if pss_match else "UNAVAILABLE"
+            else:
+                metrics["rss_kb"] = "UNAVAILABLE"
+                metrics["pss_kb"] = "UNAVAILABLE"
             
             procmem = self.run_adb_shell("cat /proc/meminfo", timeout=5).stdout
             avail_match = re.search(r"MemAvailable:\s+(\d+)\s+kB", procmem)
             metrics["mem_available_kb"] = int(avail_match.group(1)) if avail_match else "UNAVAILABLE"
-            
-            pid_match = re.search(r"pid\s+(\d+)", meminfo)
-            metrics["pid"] = int(pid_match.group(1)) if pid_match else "UNAVAILABLE"
             
             therm = self.run_adb_shell("for z in /sys/class/thermal/thermal_zone*; do type=$(cat $z/type 2>/dev/null); case \"$type\" in cpu*|cpuss*) cat $z/temp 2>/dev/null;; esac; done", timeout=5).stdout
             temps = [int(t) for t in therm.split() if t.isdigit()]
@@ -186,6 +220,110 @@ class Harness:
         except Exception as e:
             state["diagnostic_error"] = str(e)
         return state
+
+    def load_model_with_peak_memory_tracking(self, model_id: str, timeout_sec: int = 60, interval_sec: float = 0.2) -> Dict[str, Any]:
+        self.run_cmd(["timeout", "30s", "adb", "logcat", "-c"])
+
+        expected_pid = getattr(self, 'current_pid', None)
+        if not expected_pid:
+            expected_pid = self.get_pid()
+            self.current_pid = expected_pid
+
+        if not expected_pid:
+            return {"status": "FAILED", "error": "No running process"}
+
+        baseline_metrics = self.get_device_metrics()
+        
+        self.log(f"Starting model load for {model_id} with peak memory tracking...")
+        start_time = time.time()
+        self.run_cmd(["timeout", "30s", "adb", "shell", "am", "broadcast", "-a", "com.edgemind.ACTION_LOAD_MODEL", "-n", "com.edgemind.app/.TestReceiver", "--es", "model_id", model_id])
+        
+        peak_rss = baseline_metrics.get("rss_kb", 0)
+        if not isinstance(peak_rss, int): peak_rss = 0
+        peak_pss = baseline_metrics.get("pss_kb", 0)
+        if not isinstance(peak_pss, int): peak_pss = 0
+        
+        status = "TIMEOUT"
+        error_msg = ""
+        load_time_ms = 0
+        
+        while time.time() - start_time < timeout_sec:
+            loop_start = time.time()
+            
+            combined_cmd = f"pidof com.edgemind.app && run-as com.edgemind.app cat /proc/{expected_pid}/smaps_rollup"
+            try:
+                out = self.run_adb_shell(combined_cmd, timeout=3).stdout
+            except Exception as e:
+                # Ignore transient timeouts during load, just continue sampling
+                out = ""
+            
+            if out and "Rss:" in out:
+                rss_match = re.search(r"^Rss:\s+(\d+)\s+kB", out, re.MULTILINE)
+                pss_match = re.search(r"^Pss:\s+(\d+)\s+kB", out, re.MULTILINE)
+                
+                curr_rss = int(rss_match.group(1)) if rss_match else 0
+                curr_pss = int(pss_match.group(1)) if pss_match else 0
+                
+                if curr_rss > peak_rss: peak_rss = curr_rss
+                if curr_pss > peak_pss: peak_pss = curr_pss
+            elif out and str(expected_pid) not in out.splitlines()[0]:
+                status = "FAILED"
+                error_msg = f"PID changed or died. Expected {expected_pid}, got: {out.splitlines()[0]}"
+                break
+                
+            try:
+                log_out = self.run_cmd(["timeout", "2s", "adb", "logcat", "-d", "-s", "TestReceiver"], timeout=3).stdout
+            except Exception as e:
+                log_out = ""
+            
+            done = False
+            for line in log_out.splitlines():
+                if "CMD_DONE: Load completed" in line:
+                    status = "PASSED"
+                    match = re.search(r"in (\d+)ms", line)
+                    if match:
+                        load_time_ms = int(match.group(1))
+                    done = True
+                    break
+                elif "CMD_ERR" in line:
+                    status = "FAILED"
+                    error_msg = line.strip()
+                    done = True
+                    break
+                    
+            if done:
+                break
+                
+            elapsed = time.time() - loop_start
+            sleep_time = interval_sec - elapsed
+            if sleep_time > 0:
+                time.sleep(sleep_time)
+                
+        time.sleep(1) # Let things settle
+        final_metrics = self.get_device_metrics()
+        
+        return {
+            "status": status,
+            "error": error_msg,
+            "expected_pid": expected_pid,
+            "observed_pid_final": final_metrics.get("pid", "UNAVAILABLE"),
+            "load_time_ms": load_time_ms,
+            "duration_sec": time.time() - start_time,
+            "baseline": {
+                "rss_kb": baseline_metrics.get("rss_kb"),
+                "pss_kb": baseline_metrics.get("pss_kb"),
+                "mem_available_kb": baseline_metrics.get("mem_available_kb")
+            },
+            "peak": {
+                "rss_kb": peak_rss,
+                "pss_kb": peak_pss
+            },
+            "final": {
+                "rss_kb": final_metrics.get("rss_kb"),
+                "pss_kb": final_metrics.get("pss_kb"),
+                "mem_available_kb": final_metrics.get("mem_available_kb")
+            }
+        }
 
     def start_heartbeat(self, test_name: str, interval: int = 10, max_no_progress_sec: int = 120):
         self._heartbeat_stop.clear()

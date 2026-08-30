@@ -12,7 +12,7 @@
     "GATE_2_INDEPENDENT"
   ],
   "blocked_tests": [],
-  "operator_interventions": 0,
+  "operator_interventions": 1,
   "stages": {
     "GATE_1_BASELINE": {
       "gate": 1,
