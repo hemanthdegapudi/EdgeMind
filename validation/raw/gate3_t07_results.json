@@ -1,0 +1,47 @@
+{
+  "baseline": {
+    "total_pss": 2018257,
+    "total_rss": 2039044,
+    "native_heap_size": 1990416,
+    "native_heap_alloc": 1987306,
+    "native_heap_free": 3109
+  },
+  "qwen_loaded": {
+    "total_pss": 1761139,
+    "total_rss": 1800916,
+    "native_heap_size": 1990740,
+    "native_heap_alloc": 1987326,
+    "native_heap_free": 3413
+  },
+  "qwen_output": "08-30 15:55:30.348 12919 12955 I TestReceiver: CMD_OUTPUT: <think>",
+  "post_qwen_unload": {
+    "total_pss": 54696,
+    "total_rss": 100556,
+    "native_heap_size": 23836,
+    "native_heap_alloc": 22065,
+    "native_heap_free": 1770
+  },
+  "deepseek_loaded": {
+    "total_pss": 2319535,
+    "total_rss": 2344624,
+    "native_heap_size": 1989580,
+    "native_heap_alloc": 1987404,
+    "native_heap_free": 2175
+  },
+  "deepseek_output": "08-30 15:56:08.838 12919 12955 I TestReceiver: CMD_OUTPUT: <think>",
+  "post_deepseek_unload": {
+    "total_pss": 56467,
+    "total_rss": 84832,
+    "native_heap_size": 23792,
+    "native_heap_alloc": 21849,
+    "native_heap_free": 1942
+  },
+  "qwen_loaded_2": {
+    "total_pss": 2625512,
+    "total_rss": 2649124,
+    "native_heap_size": 2669256,
+    "native_heap_alloc": 2666951,
+    "native_heap_free": 2304
+  },
+  "qwen_output_2": "08-30 15:56:51.757 12919 12950 I TestReceiver: CMD_OUTPUT: <think>"
+}

@@ -76,7 +76,7 @@ class ChatActivity : AppCompatActivity() {
         rvChatHistory.adapter = chatAdapter
 
         // Start Foreground Service to keep process alive and initialize Thermal/Memory guards properly
-        startService(Intent(this, InferenceForegroundService::class.java))
+        startForegroundService(Intent(this, InferenceForegroundService::class.java))
 
         setupModelSpinner()
         observeModelState()
@@ -109,7 +109,7 @@ class ChatActivity : AppCompatActivity() {
                     lifecycleScope.launch {
                         // Prevent sending while switching
                         withContext(Dispatchers.Main) { btnSend.isEnabled = false; spinnerModels.isEnabled = false }
-                        manager.switchModel(selectedModel.id)
+manager.switchModel(selectedModel.id)
                         withContext(Dispatchers.Main) { spinnerModels.isEnabled = true }
                     }
                 }

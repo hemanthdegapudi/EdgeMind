@@ -1,0 +1,56 @@
+{
+  "qwen3": {
+    "baseline": {
+      "pss": 4488,
+      "rss": 5180,
+      "heap_size": 14496,
+      "heap_alloc": 13382
+    },
+    "loaded_mem": {
+      "pss": 2037090,
+      "rss": 2037784,
+      "heap_size": 2663344,
+      "heap_alloc": 2661044
+    },
+    "post_gen_mem": {
+      "pss": 2040614,
+      "rss": 2041308,
+      "heap_size": 2665784,
+      "heap_alloc": 2664127
+    },
+    "unloaded_mem": {
+      "pss": 7958,
+      "rss": 8652,
+      "heap_size": 17932,
+      "heap_alloc": 16298
+    },
+    "log_metrics": "08-30 16:00:11.613 16881 16916 I InferenceForegroundService: Initializing InferenceEngine via AiChat factory\n08-30 16:00:11.618 16881 16916 I InferenceEngineImpl: Instantiating InferenceEngineImpl,,,\n08-30 16:00:11.618 16881 16916 I InferenceForegroundService: InferenceEngine initialized. State: com.arm.aichat.InferenceEngine$State$Uninitialized@e8352cd\n08-30 16:00:11.620 16881 16917 I InferenceEngineImpl: Loading native library...\n08-30 16:00:11.662 16881 16917 I InferenceEngineImpl: Native library loaded! System info: \n08-30 16:00:11.662 16881 16917 I InferenceEngineImpl: CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | DOTPROD = 1 | OPENMP = 1 | KLEIDIAI = 1 | REPACK = 1 | \n08-30 16:00:13.618 16881 16917 I InferenceEngineImpl: Checking access to model file... \n08-30 16:00:13.618 16881 16917 I InferenceEngineImpl: /sdcard/models/Qwen3-1.7B-Q4_K_M.gguf\n08-30 16:00:13.627 16881 16917 I InferenceEngineImpl: Loading model... \n08-30 16:00:13.627 16881 16917 I InferenceEngineImpl: /sdcard/models/Qwen3-1.7B-Q4_K_M.gguf\n08-30 16:00:20.432 16881 16917 I InferenceEngineImpl: Model loaded!\n08-30 16:00:24.172 16881 16919 I InferenceEngineImpl: Sending user prompt...\n08-30 16:00:24.905 16881 16919 I InferenceEngineImpl: User prompt processed. Generating assistant prompt...\n08-30 16:00:38.168 16881 16919 I InferenceEngineImpl: Assistant generation complete. Awaiting user prompt...\n08-30 16:00:38.174 16881 16919 I TestReceiver: CMD_OUTPUT: <think>\n08-30 16:00:39.525 16881 16916 I InferenceEngineImpl: Unloading model and free resources...\n08-30 16:00:39.814 16881 16916 I InferenceEngineImpl: Model unloaded!"
+  },
+  "deepseek": {
+    "baseline": {
+      "pss": 4807,
+      "rss": 5484,
+      "heap_size": 14604,
+      "heap_alloc": 13378
+    },
+    "loaded_mem": {
+      "pss": 1366021,
+      "rss": 1366700,
+      "heap_size": 1983492,
+      "heap_alloc": 1981582
+    },
+    "post_gen_mem": {
+      "pss": 1369360,
+      "rss": 1370192,
+      "heap_size": 1987324,
+      "heap_alloc": 1984645
+    },
+    "unloaded_mem": {
+      "pss": 7596,
+      "rss": 8428,
+      "heap_size": 17756,
+      "heap_alloc": 16366
+    },
+    "log_metrics": "08-30 16:00:48.534 18852 18882 I InferenceForegroundService: Initializing InferenceEngine via AiChat factory\n08-30 16:00:48.540 18852 18882 I InferenceEngineImpl: Instantiating InferenceEngineImpl,,,\n08-30 16:00:48.540 18852 18882 I InferenceForegroundService: InferenceEngine initialized. State: com.arm.aichat.InferenceEngine$State$Uninitialized@8c53ed0\n08-30 16:00:48.541 18852 18881 I InferenceEngineImpl: Loading native library...\n08-30 16:00:48.590 18852 18881 I InferenceEngineImpl: Native library loaded! System info: \n08-30 16:00:48.590 18852 18881 I InferenceEngineImpl: CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | DOTPROD = 1 | OPENMP = 1 | KLEIDIAI = 1 | REPACK = 1 | \n08-30 16:00:50.679 18852 18881 I InferenceEngineImpl: Checking access to model file... \n08-30 16:00:50.679 18852 18881 I InferenceEngineImpl: /sdcard/models/DeepSeek-R1-Distill-Qwen-1.5B-Q5_K_M.gguf\n08-30 16:00:50.707 18852 18881 I InferenceEngineImpl: Loading model... \n08-30 16:00:50.707 18852 18881 I InferenceEngineImpl: /sdcard/models/DeepSeek-R1-Distill-Qwen-1.5B-Q5_K_M.gguf\n08-30 16:00:55.638 18852 18881 I InferenceEngineImpl: Model loaded!\n08-30 16:01:01.084 18852 18884 I InferenceEngineImpl: Sending user prompt...\n08-30 16:01:01.515 18852 18884 I InferenceEngineImpl: User prompt processed. Generating assistant prompt...\n08-30 16:01:06.996 18852 18884 I InferenceEngineImpl: Assistant generation complete. Awaiting user prompt...\n08-30 16:01:06.998 18852 18884 I TestReceiver: CMD_OUTPUT: <think>\n08-30 16:01:16.414 18852 18881 I InferenceEngineImpl: Unloading model and free resources...\n08-30 16:01:16.647 18852 18881 I InferenceEngineImpl: Model unloaded!"
+  }
+}
