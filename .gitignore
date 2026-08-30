@@ -66,3 +66,7 @@ Thumbs.db
 
 # Local Android/JDK toolchain
 .toolchain/
+
+
+#Ignore vscode AI rules
+.github/instructions/codacy.instructions.md
