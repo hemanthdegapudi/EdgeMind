@@ -1,0 +1,8 @@
+    versionCode=1 minSdk=30 targetSdk=36
+    versionName=10.0
+    apkSigningVersion=2
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    signatures=PackageSignatures{2d53b19 version:2, signatures:[861d9a97], past signatures:[]}
+MemoryGuard Threshold: 2.2 GiB (EXPERIMENTAL_THRESHOLD_BYTES)
+Model: Qwen2.5 3B Q4_K_M
+Timestamp: Fri Aug 28 03:17:46 PM IST 2026

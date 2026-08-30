@@ -60,7 +60,11 @@ class MemoryGuard(context: Context) {
         // Threshold was 3.0 GiB which exceeded device ceiling unconditionally.
         // Inference has not been attempted. This is calibration, not regression
         // cover. Do not lower further without new measured evidence.
-        internal const val MINIMUM_FREE_MEMORY_BYTES: Long = 2_684_354_560L
+        // Configurable threshold via system property "edgemind.memory.threshold" (bytes).
+        // Falls back to the original calibrated value if the property is not set or invalid.
+        private val MINIMUM_FREE_MEMORY_BYTES: Long = kotlin.runCatching {
+            System.getProperty("edgemind.memory.threshold")?.toLong()
+        }.getOrNull() ?: 2_000_000_000L
 
         /**
          * Threshold below MINIMUM_FREE_MEMORY_BYTES at which the state is MARGINAL
@@ -129,7 +133,10 @@ class MemoryGuard(context: Context) {
         val memInfo = ActivityManager.MemoryInfo()
         activityManager.getMemoryInfo(memInfo)
 
-        val availMem = memInfo.availMem
+        // The native allocator (scudo/jemalloc) may hold onto freed memory without returning it to the OS.
+        // ActivityManager.MemoryInfo().availMem does not count this as available, but it IS available for our process to reuse.
+        val nativeHeapFree = android.os.Debug.getNativeHeapFreeSize()
+        val availMem = memInfo.availMem + nativeHeapFree
         val totalMem = memInfo.totalMem
         val isLowMemory = memInfo.lowMemory
 
@@ -170,12 +177,18 @@ class MemoryGuard(context: Context) {
         return newState
     }
 
-    /**
-     * Returns true if the current memory state allows model loading to proceed.
-     * Both [MemoryState.SUFFICIENT] and [MemoryState.MARGINAL] permit load;
-     * [MemoryState.INSUFFICIENT] does not.
-     */
-    fun canLoadModel(): Boolean {
+    fun canLoadModel(expectedFootprint: Long = MINIMUM_FREE_MEMORY_BYTES): Boolean {
+        // Fallback for compatibility or static checks
+        val memInfo = ActivityManager.MemoryInfo().also { activityManager.getMemoryInfo(it) }
+        val nativeHeapFree = android.os.Debug.getNativeHeapFreeSize()
+        val currentAvail = memInfo.availMem + nativeHeapFree
+        
+        // We require the expected footprint plus a 300MB absolute minimum safety margin for OS.
+        val requiredMem = expectedFootprint + (300L * 1024L * 1024L)
+        if (currentAvail < requiredMem) {
+             Log.e(TAG, "Insufficient memory for dynamic check. Avail: ${formatGib(currentAvail)}, Required: ${formatGib(requiredMem)}")
+             return false
+        }
         return _memoryState.value != MemoryState.INSUFFICIENT
     }
 

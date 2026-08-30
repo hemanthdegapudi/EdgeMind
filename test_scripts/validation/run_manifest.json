@@ -1,0 +1,11 @@
+{
+  "campaign_id": "20260829_223138",
+  "timestamp": "2026-08-29T22:31:38.588982",
+  "stages": {
+    "GATE_0_SYNTHETIC": {
+      "status": "PASSED",
+      "last_checkpoint": "validation/checkpoints/GATE_0_SYNTHETIC_checkpoint.json"
+    }
+  },
+  "operator_interventions": 7
+}

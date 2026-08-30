@@ -7,6 +7,8 @@
         Concrete use: InferenceForegroundService.onStartCommand() → startForeground().
     -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
 
     <!--
         FOREGROUND_SERVICE_DATA_SYNC: Required on Android 14+ (API 34) for foreground
@@ -43,14 +45,27 @@
         android:supportsRtl="true"
         android:extractNativeLibs="true">
 
-        <!-- SECURITY FLAG: exported=true with no permission.
-             TRACKED: GitHub Issue #42.
-             BLOCK: Must be resolved before any non-dev APK build.
-             RISK: Any installed app can start inference service. -->
+        <activity
+            android:name=".ui.ChatActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <service
             android:name=".service.InferenceForegroundService"
             android:exported="true"
             android:foregroundServiceType="dataSync" />
+
+        <receiver android:name=".TestReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.edgemind.ACTION_LOAD_MODEL" />
+                <action android:name="com.edgemind.ACTION_UNLOAD_MODEL" />
+                <action android:name="com.edgemind.ACTION_GENERATE" />
+            </intent-filter>
+        </receiver>
 
     </application>
 

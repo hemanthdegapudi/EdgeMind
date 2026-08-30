@@ -1,0 +1,2 @@
+Filesystem       Size  Used Avail Use% Mounted on
+/dev/block/sda31 109G   48G   61G  44% /data/user/0

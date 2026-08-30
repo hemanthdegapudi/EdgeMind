@@ -1,0 +1,700 @@
+--------- beginning of main
+08-28 13:41:34.545  2082  2323 I MiuiNetworkPolicy: ACTION_PACKAGE_ADDED uid = 10249
+08-28 13:41:34.546  2082  2323 D MiuiNetworkPolicyAppBuckets: updateAppPN packageName=com.edgemind.app,uid=10249,installed=true
+08-28 13:41:34.547  2684  2684 W MiuiFullScreenGestureProxy: packageMonitor   onPackageModified  packageName=com.edgemind.app
+08-28 13:41:34.550  2684  2684 D LockScreenMagazineController: received broadcast android.intent.action.PACKAGE_ADDED
+08-28 13:41:34.550  5104  5104 I ##XLogger##: #&^EsVpXBdpm8WqtAf5M7KyDM6UqVcN4RGKinU30BxMoqQ5KTMQvDz7Z4oIA0fD7rKnnjXE+ex/d0qWvhsUI4I67hYa/h6iNrQVLihEbDrUF7KRhT8miHRKIzGKYHSfwnA3dqrnXk0oAVzJ9SjJ2eiju6CrdvY2/wsni5DIoYSY2IY=!!9Hh0+LA3N+OwgP+vbWVBUMwDx3pHYnI+6vjTo86IL0Mh/ORugMYuFu0J5IIesc8EJXnLysFl8S7mUwl4SY/pRZ7HFgDcjrqxw+2OfRRtMuUdbCiDiVe69TKLEaYe27Fltp2woAOf9seOt8uVL2nDmneNdFKto+ffHvewccs23s+BVf+du2W2uF9f8ciHUdTuORbPThVfXW3MPjAktLtzUju9XII1wFQTuQZiHNxqiwVZ7pfUInJVtocRXH5RIaQoc9EsxVMJ1fjZXGpzLlwVdoxtIazwCx9DwjaUlTVLJ1HE8os1FbotiuF98rVNltqjlfTerJ+RNnKEhpv/u8G83VHUZVhdal4s4r11rH+/IYjAPAR3H1uVr6xTum5IFlUDPuH9D4FK77QoR0M/3O0DOHY9udGJT4GsBqwmf4MSwmlADL5vingY733GHCdD30/Xb335JcGaoEtDQYM2fxlNKbF6OwSKZPQPhi3x7b4cnHJT88Go0Ky6wGTdKFL9pDt2rPZkxmazOHWIwP37b1nHsX4w1xFkeYRuWXcDsRpS1NI=^&#
+08-28 13:41:34.552  4868  5527 I ecvm    : (REDACTED) maybeUpdateCacheDataForAddedPackage %s
+08-28 13:41:34.553  2684  2684 D ControlsListingControllerImpl: ServiceConfig reloaded
+08-28 13:41:34.554  5646  5646 D AggregateListener: notifyAction action:android.intent.action.PACKAGE_ADDED
+08-28 13:41:34.554  5530  5530 D AppInstalledReceiver: receive broadcast
+08-28 13:41:34.555  5530  6413 D AppInstalledReceiver: packageName: com.edgemind.app
+08-28 13:41:34.555  5530  5530 I TrafficManageService: mina mPackageReceiver 0
+08-28 13:41:34.555  5530  9210 I FireWallService: mina mPackageReceiver onReceive
+08-28 13:41:34.555  5530  9210 W FireWallService: is Pre-installed application
+08-28 13:41:34.556  5530  6413 I NewGlobalInstallCheckTask: queueExecution: add task to queue last
+08-28 13:41:34.556  5530  6413 I NewGlobalInstallCheckTask: checkStart: start the queue first task
+08-28 13:41:34.556  5530  6413 I NewGlobalInstallCheckTask: start
+08-28 13:41:34.557 21408 21408 I Finsky  : [2] amgi - Received: android.intent.action.PACKAGE_ADDED, [tPW2XEO4MBo24uoK2tAMNl1qk1znPBQZmxKg5SAxwLk]
+08-28 13:41:34.558  3015  3015 D CarrierSvcBindHelper: No carrier app for: 0
+--------- beginning of system
+08-28 13:41:34.560  2082  2204 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.edgemind.app flg=0x4000010 (has extras) } to com.lbe.security.miui/com.lbe.security.service.BootReceiver
+08-28 13:41:34.560  2082  2204 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.edgemind.app flg=0x4000010 (has extras) } to com.google.android.packageinstaller/com.android.packageinstaller.PackageInstalledReceiver
+08-28 13:41:34.561  2082  2204 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.edgemind.app flg=0x4000010 (has extras) } to com.android.settings/.search.provider.UpdateReceiver
+08-28 13:41:34.561  3015  3015 E PhoneInterfaceManager: [PhoneIntfMgr] getCarrierPackageNamesForIntentAndPhone: No UICC
+08-28 13:41:34.561  3015  3015 D CarrierSvcBindHelper: No carrier app for: 1
+08-28 13:41:34.561  6880  7022 D PowerKeeperPackageManager: addPackage: userId = 0, xspaceUserId = 999
+08-28 13:41:34.564   880   907 I vendor.qti.hardware.servicetracker@1.2-service: bindService is called for service : com.miui.global.packageinstaller/.service.ScanDispatchService and for client com.miui.securitycenter.remote
+08-28 13:41:34.564   880   907 I vendor.qti.hardware.servicetracker@1.2-service: total connections for service : com.miui.global.packageinstaller/.service.ScanDispatchServiceare :1
+08-28 13:41:34.564   880   907 I vendor.qti.hardware.servicetracker@1.2-service: total connections for client : com.miui.securitycenter.remoteare :7
+08-28 13:41:34.565   876   876 I ANDR-PERF-LM: LMPerfGlue: perfmodule_submit_request() 132: perfmodule_submit_request()
+08-28 13:41:34.565   876   876 I ANDR-PERF-LM: Core: getInstance() 84: LM getInstance
+08-28 13:41:34.565   876   876 I ANDR-PERF-LM: WQ: push() 59: LMTriggerQ push() size=0
+08-28 13:41:34.565   876   876 I ANDR-PERF-LM: WQ: push() 61: LMTriggerQ push() done size=1
+08-28 13:41:34.565   876   963 I ANDR-PERF-LM: WQ: pop() 42: LMTriggerQ pop() done size=0
+08-28 13:41:34.565   876   963 I ANDR-PERF-LM: Core: lmMain() 381: Calling runAsync for AppClassifier
+08-28 13:41:34.566  2082  5867 D CompatibilityInfo: mCompatibilityFlags - 0
+08-28 13:41:34.566  2082  5867 D CompatibilityInfo: applicationDensity - 440
+08-28 13:41:34.566  2082  5867 D CompatibilityInfo: applicationScale - 1.0
+08-28 13:41:34.569  4868  5527 I ecvm    : (REDACTED) Package %s is not launchable
+08-28 13:41:34.569   880   907 I vendor.qti.hardware.servicetracker@1.2-service: startService() is called for servicecom.miui.global.packageinstaller/.service.ScanDispatchService
+08-28 13:41:34.570  2082  2299 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS | 
+08-28 13:41:34.573  3015  3015 D CarrierSvcBindHelper: No carrier app for: 0
+08-28 13:41:34.573  2082  2204 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.edgemind.app flg=0x4000010 (has extras) } to com.android.vending/com.google.android.finsky.packagemonitor.impl.PackageMonitorReceiverImpl$RegisteredReceiver
+08-28 13:41:34.574 21408 25021 I Finsky  : [1892] SCH: Received scheduling request: Id: 12-1, Constraints: [{ L: 15000, D: 86400000, C: CHARGING_NONE, I: IDLE_NONE, N: NET_ANY, B: BATTERY_ANY }]
+08-28 13:41:34.575  3015  3015 E PhoneInterfaceManager: [PhoneIntfMgr] getCarrierPackageNamesForIntentAndPhone: No UICC
+08-28 13:41:34.575  3015  3015 D CarrierSvcBindHelper: No carrier app for: 1
+08-28 13:41:34.575 21408 21408 I Finsky  : [2] AIM: AppInfoCacheUpdater -> invalidating apps: [com.edgemind.app]
+08-28 13:41:34.575 21408 21408 I Finsky  : [2] AIM: AppInfoManager-Perf > getApps > called for 1 apps
+08-28 13:41:34.576 25267 25404 I bd_logger::builder: Successfully acquired directory lock for SDK directory
+08-28 13:41:34.576 21408 21457 I Finsky  : [1805] AIM: AppInfoManager-Perf > OnDeviceAppInfo > cacheHitCount=0, cacheMissCount=1. Missed  in cache (limit 10) : [com.edgemind.app]
+08-28 13:41:34.578  2082  4115 D CompatibilityInfo: mCompatibilityFlags - 0
+08-28 13:41:34.578  2082  4115 D CompatibilityInfo: applicationDensity - 440
+08-28 13:41:34.578  2082  4115 D CompatibilityInfo: applicationScale - 1.0
+08-28 13:41:34.578   880   907 I vendor.qti.hardware.servicetracker@1.2-service: startService() is called for servicecom.google.android.gms/.chimera.GmsIntentOperationService
+08-28 13:41:34.578 21408 21460 I Finsky  : [1806] AIM: Got app ownership map. App counts: . Unique apps: 0
+08-28 13:41:34.578 21408 21460 E Finsky  : [1806] [Counters] attempted to use a non-positive increment for: 4752
+08-28 13:41:34.579 21408 21460 E Finsky  : [1806] [Counters] attempted to use a non-positive increment for: 4753
+08-28 13:41:34.579 24348 25015 I Finsky:background: [1974] Wrote row to frosting DB: 8646
+08-28 13:41:34.581   876   963 I ANDR-PERF-LM: Core: lmMain() 391: runAsync for AppClassifier returned
+08-28 13:41:34.581   876   963 I ANDR-PERF-LM: Core: lmMain() 381: Calling runAsync for GameOptimization
+08-28 13:41:34.581   876   963 I ANDR-PERF-LM: Core: lmMain() 391: runAsync for GameOptimization returned
+08-28 13:41:34.581   876   963 I ANDR-PERF-LM: Core: lmMain() 373: Waiting on trigger Queue
+08-28 13:41:34.581   876   963 I ANDR-PERF-LM: WQ: pop() 31: LMTriggerQ pop() size=0
+08-28 13:41:34.584 21408 21408 I Finsky  : [2] DTU: Received onPackageAdded, replacing: true
+08-28 13:41:34.586 21408 21460 I Finsky  : [1806] AIM: AppInfoManager-Perf > OnDeviceAppInfo > cacheHitCount=1, cacheMissCount=0. Missed  in cache (limit 10) : []
+08-28 13:41:34.587 21408 21460 I Finsky  : [1806] AIM: Got app ownership map. App counts: . Unique apps: 0
+08-28 13:41:34.587 21408 21460 E Finsky  : [1806] [Counters] attempted to use a non-positive increment for: 4752
+08-28 13:41:34.587 21408 21460 E Finsky  : [1806] [Counters] attempted to use a non-positive increment for: 4753
+08-28 13:41:34.591  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 10130, uidState = 4
+08-28 13:41:34.591  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 99000, uidState = 4
+08-28 13:41:34.592 24122 24122 I PI-ScanDispatch: service bind, pkgName = com.edgemind.app, installer = null, isReplace = true, firstGoogleTime = 1777633481137
+08-28 13:41:34.594  2082  2499 E AppScanObserverService: Try to add a invalid package: com.edgemind.app | 10249 | 0
+08-28 13:41:34.599 24348 24348 I Finsky:background: [2] amfx - Received: android.intent.action.PACKAGE_ADDED, [tPW2XEO4MBo24uoK2tAMNl1qk1znPBQZmxKg5SAxwLk]
+08-28 13:41:34.604 24348 24422 I Finsky:background: [1935] IQ:PSL: skipping onPackageRemoved(replacing=true) for untracked package=com.edgemind.app
+08-28 13:41:34.606  3015  3015 D ImsResolver: maybeAddedImsService, packageName: com.edgemind.app
+08-28 13:41:34.610   876   876 I ANDR-PERF-LM: LMPerfGlue: perfmodule_submit_request() 132: perfmodule_submit_request()
+08-28 13:41:34.610   876   876 I ANDR-PERF-LM: Core: getInstance() 84: LM getInstance
+08-28 13:41:34.610   876   876 I ANDR-PERF-LM: WQ: push() 59: LMTriggerQ push() size=0
+08-28 13:41:34.610   876   876 I ANDR-PERF-LM: WQ: push() 61: LMTriggerQ push() done size=1
+08-28 13:41:34.610   876   963 I ANDR-PERF-LM: WQ: pop() 42: LMTriggerQ pop() done size=0
+08-28 13:41:34.610   876   963 I ANDR-PERF-LM: Core: lmMain() 381: Calling runAsync for AppClassifier
+08-28 13:41:34.611 24348 25015 I Finsky:background: [1974] Wrote row to frosting DB: 8647
+08-28 13:41:34.611 21408 21471 I Finsky  : [1809] AIM: AppInfoManager-Perf > ItemModel > CacheSize=61, cacheHitCount=0, cacheMissCount=0, total appsWithNoServerDataCount=0. Missed  in cache (limit 10) : []
+08-28 13:41:34.612 21408 21471 I Finsky  : [1809] AIM: AppInfoManager-Perf > getApps > data collection finished
+08-28 13:41:34.612 21408 21471 I Finsky  : [1809] AIM: AppInfoManager-Perf > maybeDestroyAppInfoManager is called. actives = 1
+08-28 13:41:34.614 21408 21460 I Finsky  : [1806] AIM: AppInfoManager-Perf > ItemModel > CacheSize=61, cacheHitCount=0, cacheMissCount=0, total appsWithNoServerDataCount=0. Missed  in cache (limit 10) : []
+08-28 13:41:34.616   876   963 I ANDR-PERF-LM: Core: lmMain() 391: runAsync for AppClassifier returned
+08-28 13:41:34.616   876   963 I ANDR-PERF-LM: Core: lmMain() 381: Calling runAsync for GameOptimization
+08-28 13:41:34.616   876   963 I ANDR-PERF-LM: Core: lmMain() 391: runAsync for GameOptimization returned
+08-28 13:41:34.616   876   963 I ANDR-PERF-LM: Core: lmMain() 373: Waiting on trigger Queue
+08-28 13:41:34.616   876   963 I ANDR-PERF-LM: WQ: pop() 31: LMTriggerQ pop() size=0
+08-28 13:41:34.620  5530  6413 I GpBinderManager: bindCount : 6
+08-28 13:41:34.622  2684  2684 D LockScreenMagazineController: received broadcast android.intent.action.PACKAGE_REPLACED
+08-28 13:41:34.623  2082  2204 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.edgemind.app flg=0x4000010 (has extras) } to com.android.vending/com.google.android.finsky.packagemonitor.backgroundimpl.BackgroundPackageMonitorReceiverImpl$RegisteredReceiver
+08-28 13:41:34.624  5530  5530 D AppInstalledReceiver: receive broadcast
+08-28 13:41:34.624  2082  2204 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.edgemind.app flg=0x4000010 (has extras) } to com.google.android.gms/.gass.chimera.PackageChangeBroadcastReceiver
+08-28 13:41:34.624  2082  2204 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.edgemind.app flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+08-28 13:41:34.624  5530  5773 I GpBinderManager: bindCount : 7
+08-28 13:41:34.625  2684  2684 D ControlsListingControllerImpl: ServiceConfig reloaded
+08-28 13:41:34.625 25267 25345 I in.amazon.mShop.android.shopping/LocalDataStorageEncryptor: Finish generating LocalDataStorageEncryptor instance
+08-28 13:41:34.626  5596 25004 D AppVerDbManager: will update
+08-28 13:41:34.626  6644  6799 D GrantPermission: id: 1 packageName: com.mi.android.globallauncher
+08-28 13:41:34.626  6644  6799 D GrantPermission: id: 2 packageName: com.sohu.inputmethod.sogou.xiaomi
+08-28 13:41:34.626  6644  6799 D GrantPermission: id: 3 packageName: com.comprion.android.GSMA_AC_Mobile_App_SP1_signed
+08-28 13:41:34.626  6644  6799 D GrantPermission: id: 4 packageName: com.gallery.player
+08-28 13:41:34.627  6644  6799 D GrantPermission: id: 5 packageName: de.telekom.tsc
+08-28 13:41:34.627  6644  6799 D GrantPermission: id: 6 packageName: com.miui.cleaner
+08-28 13:41:34.630  2082  2299 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS | 
+08-28 13:41:34.639  2082  2204 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.edgemind.app flg=0x4000010 (has extras) } to com.xiaomi.discover/com.xiaomi.market.data.MyPackageMonitor
+08-28 13:41:34.641  2082  2204 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.edgemind.app flg=0x4000010 (has extras) } to com.xiaomi.mipicks/com.xiaomi.market.data.MyPackageMonitor
+08-28 13:41:34.641  2082  2204 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.edgemind.app flg=0x4000010 (has extras) } to com.xiaomi.misettings/.usagestats.AppTimerReceiver
+08-28 13:41:34.641 25267 25345 W WhatsAppAutoreadPlugin: WhatsAppAutoreadPlugin is not initialized
+08-28 13:41:34.641 25267 25345 I in.amazon.mShop.android.shopping/WhatsAppAutoreadPluginHelper: Initializing WhatsApp Autoread Plugin
+08-28 13:41:34.641 25267 25345 I WhatsAppAutoreadManager: WhatsAppAutoreadOtpManager instance created
+08-28 13:41:34.641 25267 25345 I WhatsAppAutoreadPlugin: Initialized WhatsAppAutoreadPlugin
+08-28 13:41:34.643  2082  2204 D CompatibilityInfo: mCompatibilityFlags - 0
+08-28 13:41:34.643  2082  2204 D CompatibilityInfo: applicationDensity - 440
+08-28 13:41:34.643  2082  2204 D CompatibilityInfo: applicationScale - 1.0
+08-28 13:41:34.645 24348 24348 I Finsky:background: [2] amfx - Received: android.intent.action.PACKAGE_ADDED, [tPW2XEO4MBo24uoK2tAMNl1qk1znPBQZmxKg5SAxwLk]
+08-28 13:41:34.645   880   907 I vendor.qti.hardware.servicetracker@1.2-service: bindService is called for service : com.google.android.permissioncontroller/com.android.permissioncontroller.permission.service.PermissionControllerServiceImpl and for client system
+08-28 13:41:34.645   880   907 I vendor.qti.hardware.servicetracker@1.2-service: total connections for service : com.google.android.permissioncontroller/com.android.permissioncontroller.permission.service.PermissionControllerServiceImplare :1
+08-28 13:41:34.645   880   907 I vendor.qti.hardware.servicetracker@1.2-service: total connections for client : systemare :27
+08-28 13:41:34.646  2082  2192 D CompatibilityInfo: mCompatibilityFlags - 0
+08-28 13:41:34.646  2082  2192 D CompatibilityInfo: applicationDensity - 440
+08-28 13:41:34.646  2082  2192 D CompatibilityInfo: applicationScale - 1.0
+08-28 13:41:34.646   880   907 I vendor.qti.hardware.servicetracker@1.2-service: startService() is called for servicecom.google.android.permissioncontroller/com.android.permissioncontroller.permission.service.PermissionControllerServiceImpl
+08-28 13:41:34.647  2082  2082 I Telecom : DefaultDialerCache: Refreshing default dialer for user 0: now com.android.contacts: DDC.oR@ASg
+08-28 13:41:34.647  2082  2082 I Telecom : DefaultDialerCache: Refreshing default dialer for user 11: now com.android.contacts: DDC.oR@ASg
+08-28 13:41:34.647  2082  2082 I Telecom : DefaultDialerCache: Refreshing default dialer for user 999: now com.android.contacts: DDC.oR@ASg
+08-28 13:41:34.648 21408 21408 I Finsky  : [2] amgi - Received: android.intent.action.PACKAGE_ADDED, [tPW2XEO4MBo24uoK2tAMNl1qk1znPBQZmxKg5SAxwLk]
+08-28 13:41:34.651 24348 25015 I Finsky:background: [1974] Wrote row to frosting DB: 8648
+08-28 13:41:34.653 25267 25419 I in.amazon.mShop.android.shopping/MAPInitTasks: Get DataStorage instance for initialization
+08-28 13:41:34.653 25267 25419 I in.amazon.mShop.android.shopping/MAPInitTasks: Initialize DataStorage instance
+08-28 13:41:34.654 25267 25345 I MinervaWrapperService: Finished initializing MinervaClient.
+08-28 13:41:34.654 25267 25364 D StagedTaskContainer: STO Startup Task end: AmazonApplication.onCreate.MinervaWrapperService.WarmUp
+08-28 13:41:34.655  4041 25427 I AppBackupStateCleanupIO: Backup state cleanup on uninstall is disabled. [CONTEXT service_id=229 ]
+08-28 13:41:34.656 25267 25367 D StagedTaskContainer: STO Startup Task start: AmazonApplication.onCreate.ReportLoopCrashWeblabSnapshotTask.report
+08-28 13:41:34.656  4041 25429 I FraudProtectUtils: Not in testing population, skipping local test bank apps. [CONTEXT service_id=469 ]
+08-28 13:41:34.656  4041 25429 I FraudProtectUtils: (REDACTED) Latest bank app list size: %d, %s isBankApp: false
+08-28 13:41:34.656  4041 25429 I PackageInstallIntentOp: (REDACTED) Package %s is not a bank app. Skipping updates.
+08-28 13:41:34.656 21408 21462 I Finsky  : [1808] AIM: AppInfoManager-Perf > ItemModel > CacheSize=61, cacheHitCount=0, cacheMissCount=0, total appsWithNoServerDataCount=0. Missed  in cache (limit 10) : []
+08-28 13:41:34.656 21408 21462 I Finsky  : [1808] AIM: AppInfoManager-Perf > ItemModel > CacheSize=61, cacheHitCount=0, cacheMissCount=0, total appsWithNoServerDataCount=0. Missed  in cache (limit 10) : []
+08-28 13:41:34.657 25267 25267 D StagedTaskContainer: STO Startup Task end: AmazonApplication.onCreate.AndroidComponent.Detect
+08-28 13:41:34.657 25267 25267 D StagedTaskContainer: STO Startup Task start: AmazonApplication.onCreate.MASHApplication.Setup
+08-28 13:41:34.657 25267 25404 I bd_buffer::buffer::non_volatile_ring_buffer: (Verbose Buffer-non-volatile) opening ring buffer file: /data/user/0/in.amazon.mShop.android.shopping/files/bitdrift_capture/buffers/default_buffer_id
+08-28 13:41:34.658 25267 25267 I CordovaLog: Changing log level to 6
+08-28 13:41:34.658 25267 25404 I bd_buffer::buffer::non_volatile_ring_buffer: (Verbose Buffer-non-volatile) ring buffer file exists with size: 4194304
+08-28 13:41:34.658 25267 25267 D StagedTaskContainer: STO Startup Task end: AmazonApplication.onCreate.MASHApplication.Setup
+08-28 13:41:34.658 25267 25267 D StagedTaskContainer: STO Startup Task start: AmazonApplication.onCreate.MAP.Init
+08-28 13:41:34.658 25267 25267 D StagedTaskContainer: STO Startup Task end: AmazonApplication.onCreate.MAP.Init
+08-28 13:41:34.658 25267 25366 D StagedTaskContainer: STO Startup Task start: AmazonApplication.onCreate.AdsIdentity.Init
+08-28 13:41:34.659 25267 25364 D StagedTaskContainer: STO Startup Task start: AmazonApplication.onCreate.LocalizationSwitchListener.Register
+08-28 13:41:34.659 25267 25364 D StagedTaskContainer: STO Startup Task end: AmazonApplication.onCreate.LocalizationSwitchListener.Register
+08-28 13:41:34.659 25267 25364 D StagedTaskContainer: STO Startup Task start: AmazonApplication.onCreate.StartupModeManager.BootMode.Detect
+08-28 13:41:34.660 25267 25267 D StagedTaskContainer: STO Startup Task start: AmazonApplication.onCreate.SecondDexEntry.Init
+08-28 13:41:34.660 25267 25267 D StagedTaskContainer: STO Startup Task end: AmazonApplication.onCreate.SecondDexEntry.Init
+08-28 13:41:34.661 25267 25267 D StagedTaskContainer: STO Startup Task start: AmazonApplication.onCreate.StartupSequenceExecutor.OnApplicationContextLoading
+08-28 13:41:34.661 25267 25267 I StartupSequenceSupplier: in context loading
+08-28 13:41:34.662 25267 25267 D StagedTaskContainer: STO Startup Task end: AmazonApplication.onCreate.StartupSequenceExecutor.OnApplicationContextLoading
+08-28 13:41:34.663 25267 25435 D StartupTaskServiceImpl: Legacy Startup Task: StartupTaskDescriptor{mId=taskRoutingRuleEngine, mPriority=APP_START, mRequires=[], mSatisfies=[]}
+08-28 13:41:34.664  3015  3015 D CarrierConfigLoader: mHandler: 9 phoneId: 0
+08-28 13:41:34.664 25267 25366 D StagedTaskContainer: STO Startup Task end: AmazonApplication.onCreate.AdsIdentity.Init
+08-28 13:41:34.666 25267 25436 D StagedTaskContainer: STO Startup Task start: AmazonApplication.onCreate.KnowAppMetricsHandler.logMetricEvent_CRASH
+08-28 13:41:34.668 25267 25364 D StagedTaskContainer: STO Startup Task end: AmazonApplication.onCreate.StartupModeManager.BootMode.Detect
+08-28 13:41:34.668 25267 25364 D StagedTaskContainer: STO Startup Task start: AmazonApplication.onCreate.UncaughtExceptionHandler.Setup
+08-28 13:41:34.668 25267 25364 D StagedTaskContainer: STO Startup Task end: AmazonApplication.onCreate.UncaughtExceptionHandler.Setup
+08-28 13:41:34.668 25267 25364 D StagedTaskContainer: STO Startup Task start: AmazonApplication.onCreate.MLS.Init
+08-28 13:41:34.668 24122 24122 D PI-ScanDispatch: receive security msg： send client messenger
+08-28 13:41:34.668 25267 25343 I MMKV    : Disable checkProcessMode()
+08-28 13:41:34.669 25267 25367 D StagedTaskContainer: STO Startup Task end: AmazonApplication.onCreate.ReportLoopCrashWeblabSnapshotTask.report
+08-28 13:41:34.674   880   907 I vendor.qti.hardware.servicetracker@1.2-service: bindService is called for service : com.google.android.gms/.chimera.PersistentApiService and for client com.google.android.gms
+08-28 13:41:34.674   880   907 I vendor.qti.hardware.servicetracker@1.2-service: total connections for service : com.google.android.gms/.chimera.PersistentApiServiceare :18
+08-28 13:41:34.674   880   907 I vendor.qti.hardware.servicetracker@1.2-service: total connections for client : com.google.android.gmsare :5
+08-28 13:41:34.674   876   876 I ANDR-PERF-LM: LMPerfGlue: perfmodule_submit_request() 132: perfmodule_submit_request()
+08-28 13:41:34.674   876   876 I ANDR-PERF-LM: Core: getInstance() 84: LM getInstance
+08-28 13:41:34.674   876   876 D ANDR-PERF-LM: Feature: lookup() 101: Feature Name = AppClassifier, total featuers = 3, featureFound = 1
+08-28 13:41:34.674   876   876 D ANDR-PERF-LM: Feature: getData() 112: data.data = 1
+08-28 13:41:34.674   876   876 I ANDR-PERF-LM: FeedbackAPI: getFeedback() 60: app:in.amazon.mShop.android.shopping feature:AppClassifier feedback = 1
+08-28 13:41:34.675 24348 25015 I Finsky:background: [1974] Wrote row to frosting DB: 8649
+08-28 13:41:34.684  2082  2231 I SettingsInjector: notify first launch
+08-28 13:41:34.684 25267 25404 I bd_buffer::buffer::non_volatile_ring_buffer: (Continuous Buffer-non-volatile) opening ring buffer file: /data/user/0/in.amazon.mShop.android.shopping/files/bitdrift_capture/buffers/continuous_buffer
+08-28 13:41:34.685 25267 25404 I bd_buffer::buffer::non_volatile_ring_buffer: (Continuous Buffer-non-volatile) ring buffer file exists with size: 1048576
+08-28 13:41:34.686 21408 21408 I Finsky  : [2] amgi - Deduping intent android.intent.action.PACKAGE_ADDED
+08-28 13:41:34.689 25267 25364 D MobileLoggingSuite: Using DefaultLoggerFactory
+08-28 13:41:34.689 25267 25364 D MobileLoggingSuite: Configuring Nexus logger with source group: com.amazon.eel.mls.nexus.msh.prod.nexus
+08-28 13:41:34.689 25267 25364 I MlsIntegration: Successfully initialized MLS!
+08-28 13:41:34.690 24348 24348 I Finsky:background: [2] amfx - Deduping intent android.intent.action.PACKAGE_ADDED
+08-28 13:41:34.690 21408 21408 I Finsky  : [2] amgi - Received: android.intent.action.PACKAGE_ADDED, [tPW2XEO4MBo24uoK2tAMNl1qk1znPBQZmxKg5SAxwLk]
+08-28 13:41:34.693 25267 25364 I MlsIntegration: Successfully initialized Weblab poller for MLS!
+08-28 13:41:34.694 25267 25404 I bd_logger::consumer: consume_continuous_logs; buffer_id="continuous_buffer"
+08-28 13:41:34.695 25267 25267 W Looper  : PerfMonitor longMsg : seq=2 plan=13:41:33.466 late=1ms wall=1208ms running=349ms runnable=139ms io=256ms binder=43ms h=android.app.ActivityThread$H w=110 procState=10
+08-28 13:41:34.697  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 10233, uidState = 6
+08-28 13:41:34.697  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 10249, uidState = 19
+08-28 13:41:34.699 21408 21408 I Finsky  : [2] amgi - Deduping intent android.intent.action.PACKAGE_ADDED
+08-28 13:41:34.699 21408 21441 I Finsky  : [1795] RECEIVER_PACKAGE_MONITOR#logWorkEndAndFinishGoAsync: SUCCESS
+08-28 13:41:34.703   880   907 I vendor.qti.hardware.servicetracker@1.2-service: destroyService is called for service : com.android.keychain/.KeyChainService
+08-28 13:41:34.703 25267 25436 D StagedTaskContainer: STO Startup Task end: AmazonApplication.onCreate.KnowAppMetricsHandler.logMetricEvent_CRASH
+08-28 13:41:34.704 25267 25436 D StagedTaskContainer: STO Startup Task start: AmazonApplication.onCreate.WeblabRegistration.CollectWeblabs
+08-28 13:41:34.712  2082  3204 D CompatibilityInfo: mCompatibilityFlags - 0
+08-28 13:41:34.713  2082  3204 D CompatibilityInfo: applicationDensity - 440
+08-28 13:41:34.713  2082  3204 D CompatibilityInfo: applicationScale - 1.0
+08-28 13:41:34.713   699   699 D Zygote  : Forked child process 25447
+08-28 13:41:34.714   880   907 I vendor.qti.hardware.servicetracker@1.2-service: startService() is called for servicecom.google.android.gms/.icing.service.IndexWorkerService
+08-28 13:41:34.716  4041 25426 W SQLiteLog: (28) double-quoted string literal: "com.edgemind.app"
+08-28 13:41:34.716 25267 25364 D StagedTaskContainer: STO Startup Task end: AmazonApplication.onCreate.MLS.Init
+08-28 13:41:34.716 25267 25364 D StagedTaskContainer: STO Startup Task start: AmazonApplication.onCreate.AppRefresherActivityLifecycleListener.Set
+08-28 13:41:34.717  2082  2092 I system_server: Background young concurrent copying GC freed 399537(15MB) AllocSpace objects, 26(2452KB) LOS objects, 15% free, 74MB/88MB, paused 2.249ms total 171.126ms
+08-28 13:41:34.719 25447 25447 W Zygote  : Unable to open libbeluga.so: dlopen failed: library "libbeluga.so" not found.
+08-28 13:41:34.720  2082  2094 W System  : A resource failed to call release. 
+08-28 13:41:34.720  2082  2094 I chatty  : uid=1000(system) FinalizerDaemon identical 1 line
+08-28 13:41:34.720  2082  2094 W System  : A resource failed to call release. 
+08-28 13:41:34.723   880   907 I vendor.qti.hardware.servicetracker@1.2-service: bindService is called for service : com.google.android.gms/.chimera.PersistentDirectBootAwareApiService and for client com.google.android.gms
+08-28 13:41:34.723   880   907 I vendor.qti.hardware.servicetracker@1.2-service: total connections for service : com.google.android.gms/.chimera.PersistentDirectBootAwareApiServiceare :8
+08-28 13:41:34.723   880   907 I vendor.qti.hardware.servicetracker@1.2-service: total connections for client : com.google.android.gmsare :5
+08-28 13:41:34.725  2082  2205 I ActivityManager: Start proc 25447:com.edgemind.app/u0a249 for service {com.edgemind.app/com.edgemind.app.service.InferenceForegroundService} caller=com.android.shell
+08-28 13:41:34.725 25447 25447 I om.edgemind.ap: Late-enabling -Xcheck:jni
+08-28 13:41:34.732  2082  2231 W ActivityManager: Sending non-protected broadcast miui.intent.action.PACKAGE_FIRST_LAUNCH from system uid 1000 pkg null. Callers=com.android.server.am.ActivityManagerService.broadcastIntentLocked:17191 com.android.server.am.ActivityManagerService.broadcastIntentLocked:16512 com.android.server.am.ActivityManagerService.broadcastIntentWithFeature:17348 com.android.server.am.ActivityManagerService.broadcastIntent:17328 com.android.server.pm.IActivityManagerCompat.sendBroadcast:19 
+08-28 13:41:34.735 25267 25364 D StagedTaskContainer: STO Startup Task end: AmazonApplication.onCreate.AppRefresherActivityLifecycleListener.Set
+08-28 13:41:34.738  2082  3140 D CompatibilityInfo: mCompatibilityFlags - 0
+08-28 13:41:34.738  2082  3140 D CompatibilityInfo: applicationDensity - 440
+08-28 13:41:34.738  2082  3140 D CompatibilityInfo: applicationScale - 1.0
+08-28 13:41:34.740 24348 24348 I Finsky:background: [2] amfx - Received: android.intent.action.PACKAGE_ADDED, [tPW2XEO4MBo24uoK2tAMNl1qk1znPBQZmxKg5SAxwLk]
+08-28 13:41:34.744 25447 25447 I om.edgemind.ap: Unquickening 20 vdex files!
+08-28 13:41:34.746 25267 25419 I in.amazon.mShop.android.shopping/MAPInitTasks: Setup DataStorage instance
+08-28 13:41:34.747 25267 25438 I in.amazon.mShop.android.shopping/MultipleAccountPluginHolder: Returning Default multiple profile settings
+08-28 13:41:34.747 25267 25443 D RoutingStrategyRegistry: Registered strategy: ApexRoutingStrategy
+08-28 13:41:34.748 25267 25443 D RoutingStrategyRegistry: Registered strategy: NudgeRoutingStrategy
+08-28 13:41:34.748 25267 25443 D RoutingStrategyRegistry: Registered strategy: BottomSheetNudgeRoutingStrategy
+08-28 13:41:34.748 25267 25443 D RoutingStrategyRegistry: Registered strategy: AmazonPayMigrationRoutingStrategy
+08-28 13:41:34.748 25267 25443 D AmazonPayAppNavigationHandler: Initialized 4 routing strategies
+08-28 13:41:34.755 25267 25344 D DNSPrefetchTask: resolved domain succeed: m.media-amazon.com
+08-28 13:41:34.756  3237 25458 I Fitness : (REDACTED) FitCleanupIntentOperation received Intent %s
+08-28 13:41:34.756 19586 19591 I adbd    : jdwp connection from 25447
+08-28 13:41:34.757 25267 25343 I MMKV    : current API level = 30, libc++_shared=0
+08-28 13:41:34.758 25267 25343 I MMKV    : <MMKV.cpp:166::initialize> version v1.3.14, page size 4096, arch arm64-v8a
+08-28 13:41:34.758 25267 25343 I MMKV    : <MMKV.cpp:177::initialize> armv8 AES instructions is supported
+08-28 13:41:34.758 25267 25343 I MMKV    : <MMKV.cpp:185::initialize> armv8 CRC32 instructions is supported
+08-28 13:41:34.758 25267 25343 I MMKV    : <MMKV.cpp:225::initializeMMKV> root dir: /data/user/0/in.amazon.mShop.android.shopping/files/mmkv
+08-28 13:41:34.758  3237 25459 I FontLog : (REDACTED) Package %s has no metadata
+08-28 13:41:34.759 25267 25343 I MMKV    : <MemoryFile.cpp:98::open> open fd[0x65], /data/user/0/in.amazon.mShop.android.shopping/files/mmkv/specialCharacter/bdf9617a1d47d24e9da7765e916e61e0
+08-28 13:41:34.760 25267 25267 I PrefetchService: Service binded Successfully for Intent { act=com.amazon.mShop.kuber.service.PREFETCH_SERVICE cmp=in.amazon.mShop.android.shopping/com.amazon.mShop.kuber.service.PrefetchService (has extras) }
+08-28 13:41:34.761  4041 25434 W AppInstallOperation: FDL Migration::InstallIntentOperation by FDL Module [CONTEXT service_id=77 ]
+08-28 13:41:34.761  4041 25416 I FraudProtectUtils: Not in testing population, skipping local test bank apps. [CONTEXT service_id=469 ]
+08-28 13:41:34.761  4041 25416 I FraudProtectUtils: (REDACTED) Latest bank app list size: %d, %s isBankApp: false
+08-28 13:41:34.761  4041 25416 I PackageInstallIntentOp: (REDACTED) Package %s is not a bank app. Skipping updates.
+08-28 13:41:34.762  4041 25426 I Auth    : (REDACTED) [SupervisedAccountIntentOperation] onHandleIntent: %s
+08-28 13:41:34.762  4041 25418 I NearbyDiscovery: (REDACTED) processGrantSlicePermission: %s
+08-28 13:41:34.763 25267 25343 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x716176d000], oldPtr [0x0], [/data/user/0/in.amazon.mShop.android.shopping/files/mmkv/specialCharacter/bdf9617a1d47d24e9da7765e916e61e0]
+08-28 13:41:34.763 25267 25343 I MMKV    : <MemoryFile.cpp:98::open> open fd[0x6a], /data/user/0/in.amazon.mShop.android.shopping/files/mmkv/specialCharacter/bdf9617a1d47d24e9da7765e916e61e0.crc
+08-28 13:41:34.763 25267 25343 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x71615fd000], oldPtr [0x0], [/data/user/0/in.amazon.mShop.android.shopping/files/mmkv/specialCharacter/bdf9617a1d47d24e9da7765e916e61e0.crc]
+08-28 13:41:34.766 21408 21452 I Finsky  : [1803] WM::SCH: Logging work initialize for 12-1
+08-28 13:41:34.769 24122 24283 D PI-ScanInterceptor: local first active time: 1777633481137
+08-28 13:41:34.769 24122 24283 D PI-ScanInterceptor: the first scan time: 1777633481137
+08-28 13:41:34.772 21408 21462 I Finsky  : [1808] AIM: AppInfoManager-Perf > getApps > data collection finished
+08-28 13:41:34.773 21408 21462 I Finsky  : [1808] AIM: AppInfoManager-Perf > maybeDestroyAppInfoManager is called. actives = 0
+08-28 13:41:34.774 21408 21462 I Finsky  : [1808] SCH: Scheduling phonesky job Id: 12-1, CT: 1787904694526, Constraints: [{ L: 15000, D: 86400000, C: CHARGING_NONE, I: IDLE_NONE, N: NET_ANY, B: BATTERY_ANY }]
+08-28 13:41:34.775 25267 25343 I MMKV    : <MMKV_IO.cpp:214::loadMetaInfoAndCheck> meta file [com:amazon:mShop:sam] has flag [0]
+08-28 13:41:34.776 21408 21462 I Finsky  : [1808] SCH: Scheduling 1 system job(s)
+08-28 13:41:34.776 21408 21462 I Finsky  : [1808] SCH: Scheduling system job Id: 9936, L: 14750, D: 69211619, C: false, I: false, N: 1
+08-28 13:41:34.779 24348 24348 I Finsky:background: [2] amfx - Deduping intent android.intent.action.PACKAGE_ADDED
+08-28 13:41:34.779 24348 24425 I Finsky:background: [1937] RECEIVER_PACKAGE_MONITOR_BACKGROUND#logWorkEndAndFinishGoAsync: SUCCESS
+08-28 13:41:34.780  2082  2613 D CompatibilityInfo: mCompatibilityFlags - 0
+08-28 13:41:34.780  2082  2613 D CompatibilityInfo: applicationDensity - 440
+08-28 13:41:34.780  2082  2613 D CompatibilityInfo: applicationScale - 1.0
+08-28 13:41:34.781 24122 24283 E AutoInstalls: Layout definition not found in package: android.autoinstalls.config.Xiaomi.raphaelin
+08-28 13:41:34.782 25267 25436 D StagedTaskContainer: STO Startup Task end: AmazonApplication.onCreate.WeblabRegistration.CollectWeblabs
+08-28 13:41:34.782 25267 25436 D StagedTaskContainer: STO Startup Task start: AmazonApplication.onCreate.ShopKitServices.WarmUp
+08-28 13:41:34.782 25267 25343 I MMKV    : <MMKV_IO.cpp:84::loadFromFile> loading [com:amazon:mShop:sam] with 690 actual size, file size 4096, InterProcess 0, meta info version:4
+08-28 13:41:34.782 25267 25343 I MMKV    : <MMKV_IO.cpp:89::loadFromFile> loading [com:amazon:mShop:sam] with crc 2448661782 sequence 1 version 4
+08-28 13:41:34.782 25267 25343 I MMKV    : <MMKV_IO.cpp:133::loadFromFile> loaded [com:amazon:mShop:sam] with 2 key-values
+08-28 13:41:34.782 25267 25343 D StagedTaskContainer: STO Startup Task end: MShopApplication.onCreate.ErrorReporting.init
+08-28 13:41:34.783 24122 24283 D PubSubTrack: actionType = install_interception not published. enablePublish:false
+08-28 13:41:34.783 24122 24283 D PI-ScanDispatch: interruptCode = 7
+08-28 13:41:34.783 24122 24283 D PI-ScanDispatch: send msg to security, the interrupt result：7
+08-28 13:41:34.785  2082  2613 D CompatibilityInfo: mCompatibilityFlags - 0
+08-28 13:41:34.784  5530  5530 I NewGlobalInstallCheckTask: handleMessage: interrupt and unbind. blockType = 7
+08-28 13:41:34.785  2082  2613 D CompatibilityInfo: applicationDensity - 440
+08-28 13:41:34.785  2082  2613 D CompatibilityInfo: applicationScale - 1.0
+08-28 13:41:34.785  5530  5530 I NewGlobalInstallCheckTask: finish: the queue first task operate over.remove first task.
+08-28 13:41:34.785  2082  2192 W Looper  : Slow dispatch took 138ms android.fg h=android.os.Handler c=<recycled PooledLambda@e9cb952> m=0
+08-28 13:41:34.785   880   907 I vendor.qti.hardware.servicetracker@1.2-service: startService() is called for servicecom.edgemind.app/.service.InferenceForegroundService
+08-28 13:41:34.786  5947  5976 D PMonitor:  onProcessDied:pid = 25447,died-uid=10249
+08-28 13:41:34.786  7083  7183 D PMonitor:  onProcessDied:pid = 25447,died-uid=10249
+08-28 13:41:34.789  2082  6009 D CompatibilityInfo: mCompatibilityFlags - 0
+08-28 13:41:34.789  2082  6009 D CompatibilityInfo: applicationDensity - 440
+08-28 13:41:34.789  2082  6009 D CompatibilityInfo: applicationScale - 1.0
+08-28 13:41:34.789   880   907 I vendor.qti.hardware.servicetracker@1.2-service: startService() is called for servicecom.google.android.gms/.wearable.service.WearableControlService
+08-28 13:41:34.790   880   907 I vendor.qti.hardware.servicetracker@1.2-service: unbindService is called for service : com.miui.global.packageinstaller/.service.ScanDispatchService and for client com.miui.securitycenter.remote
+08-28 13:41:34.790   880   907 I vendor.qti.hardware.servicetracker@1.2-service: size of service connections for service: com.miui.global.packageinstaller/.service.ScanDispatchServiceafter removal is 0
+08-28 13:41:34.790   880   907 I vendor.qti.hardware.servicetracker@1.2-service: size of client connections for client: com.miui.securitycenter.remoteafter removal is 6
+08-28 13:41:34.793   880   907 I vendor.qti.hardware.servicetracker@1.2-service: destroyService is called for service : com.miui.global.packageinstaller/.service.ScanDispatchService
+08-28 13:41:34.793 25267 25443 W OrderedRoutingRuleSequence: The RoutingRule AlCompanionRoutingRule is not registered in the rule order list!
+08-28 13:41:34.793  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 10249, uidState = 4
+08-28 13:41:34.793  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 10130, uidState = 10
+08-28 13:41:34.793  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 99000, uidState = 10
+08-28 13:41:34.796   880   907 I vendor.qti.hardware.servicetracker@1.2-service: destroyService is called for service : com.google.android.gms/.icing.service.IndexWorkerService
+08-28 13:41:34.797  2082  3140 D CompatibilityInfo: mCompatibilityFlags - 0
+08-28 13:41:34.797  2082  3140 D CompatibilityInfo: applicationDensity - 440
+08-28 13:41:34.797  2082  3140 D CompatibilityInfo: applicationScale - 1.0
+08-28 13:41:34.798   880   907 I vendor.qti.hardware.servicetracker@1.2-service: startService() is called for servicecom.google.android.gms/.icing.service.IndexWorkerService
+08-28 13:41:34.798  2082  2612 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REPLACED dat=package:com.edgemind.app flg=0x4000010 (has extras) } to com.google.android.gms/.gass.chimera.PackageChangeBroadcastReceiver
+08-28 13:41:34.799  2082  2204 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REPLACED dat=package:com.edgemind.app flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+08-28 13:41:34.800  2082  2204 D CompatibilityInfo: mCompatibilityFlags - 0
+08-28 13:41:34.800  2082  2204 D CompatibilityInfo: applicationDensity - 440
+08-28 13:41:34.800  2082  2204 D CompatibilityInfo: applicationScale - 1.0
+08-28 13:41:34.801  5596 21176 D AppStatChecker: first launch package: com.edgemind.app
+08-28 13:41:34.802  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 10130, uidState = 19
+08-28 13:41:34.802  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 99000, uidState = 19
+08-28 13:41:34.803  2082  2612 D CompatibilityInfo: mCompatibilityFlags - 0
+08-28 13:41:34.803  2082  2612 D CompatibilityInfo: applicationDensity - 440
+08-28 13:41:34.803  2082  2612 D CompatibilityInfo: applicationScale - 1.0
+08-28 13:41:34.806 24348 25015 I Finsky:background: [1974] Wrote row to frosting DB: 8650
+08-28 13:41:34.816   880   907 I vendor.qti.hardware.servicetracker@1.2-service: destroyService is called for service : com.google.android.gms/.wearable.service.WearableControlService
+08-28 13:41:34.817  2082  6009 D CompatibilityInfo: mCompatibilityFlags - 0
+08-28 13:41:34.818  2082  6009 D CompatibilityInfo: applicationDensity - 440
+08-28 13:41:34.818  2082  6009 D CompatibilityInfo: applicationScale - 1.0
+08-28 13:41:34.821   880   907 I vendor.qti.hardware.servicetracker@1.2-service: destroyService is called for service : com.google.android.gms/.icing.service.IndexWorkerService
+08-28 13:41:34.823 25267 25419 I in.amazon.mShop.android.shopping/CentralApkUtils: Cannot find amazon authenticator. returning null
+08-28 13:41:34.823 25267 25419 I in.amazon.mShop.android.shopping/CentralApkUtils: No central apk detected. This should be a 3P device.
+08-28 13:41:34.839 25267 25436 D ConfigEncryptionManager: Keystore initialization succeeded
+08-28 13:41:34.852  3054  3299 D Launcher.Model: Got broadcast:Intent { act=android.intent.action.PACKAGE_CHANGED dat=package:com.edgemind.app (has extras) }
+08-28 13:41:34.854  3054  3054 D Launcher: bindAppsChanged removedPackages:[RemoveInfo{packageName='com.edgemind.app', replacing=true}]
+08-28 13:41:34.854  3054  3054 D Launcher: bindAppsChanged appsAddedLater:[]
+08-28 13:41:34.854  3054  3054 D Launcher: bindAppsChanged addedShortcuts:[]
+08-28 13:41:34.855  3054  3054 I AllAppsCategoryView: updateAppsCategory ==> begin
+08-28 13:41:34.863  2082  2192 W Looper  : Slow delivery took 208ms android.fg h=android.os.Handler c=<recycled PooledLambda@dc8f87c> m=0
+08-28 13:41:34.863 25267 25419 I in.amazon.mShop.android.shopping/CentralApkUtils: Cannot find amazon authenticator. returning null
+08-28 13:41:34.863 25267 25419 I in.amazon.mShop.android.shopping/CentralApkUtils: No central apk detected. This should be a 3P device.
+08-28 13:41:34.863 25267 25419 I in.amazon.mShop.android.shopping/IsolatedModeSwitcher: Application supports runtime isolated mode switch.
+08-28 13:41:34.863 25267 25419 I in.amazon.mShop.android.shopping/IsolatedModeSwitcher: Restoring current runtime isolated mode: false
+08-28 13:41:34.865  2082  2612 D CompatibilityInfo: mCompatibilityFlags - 0
+08-28 13:41:34.865  2082  2612 D CompatibilityInfo: applicationDensity - 440
+08-28 13:41:34.865  2082  2612 D CompatibilityInfo: applicationScale - 1.0
+08-28 13:41:34.866 24779 24779 D AppActiveReceiver: receive app active broadcast for: com.edgemind.app, install from: null
+08-28 13:41:34.866  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 10126, uidState = 11
+08-28 13:41:34.870  2082  3140 D CompatibilityInfo: mCompatibilityFlags - 0
+08-28 13:41:34.870  2082  3140 D CompatibilityInfo: applicationDensity - 440
+08-28 13:41:34.870  2082  3140 D CompatibilityInfo: applicationScale - 1.0
+08-28 13:41:34.871   880   907 I vendor.qti.hardware.servicetracker@1.2-service: startService() is called for servicecom.xiaomi.discover/com.xiaomi.market.service.AppActiveStatService
+08-28 13:41:34.873  2082  2612 D CompatibilityInfo: mCompatibilityFlags - 0
+08-28 13:41:34.873  2082  2612 D CompatibilityInfo: applicationDensity - 440
+08-28 13:41:34.873  2082  2612 D CompatibilityInfo: applicationScale - 1.0
+08-28 13:41:34.874  7083  7183 D PMonitor:  onProcessDied:pid = 24779,died-uid=10126
+08-28 13:41:34.875 24779 24779 I SystemUpdate-AppActiveStatService: start forground service
+08-28 13:41:34.877  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 10126, uidState = 4
+08-28 13:41:34.877  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 10123, uidState = 11
+08-28 13:41:34.879  5947  5976 D PMonitor:  onProcessDied:pid = 24779,died-uid=10126
+08-28 13:41:34.883 25267 25419 I in.amazon.mShop.android.shopping/CentralApkUtils: Cannot find amazon authenticator. returning null
+08-28 13:41:34.883 25267 25419 I in.amazon.mShop.android.shopping/CentralApkUtils: No central apk detected. This should be a 3P device.
+08-28 13:41:34.884  2082  6415 W ActivityManager: Foreground service started from background can not have location/camera/microphone access: service com.xiaomi.discover/com.xiaomi.market.service.AppActiveStatService
+08-28 13:41:34.885 25267 25436 I MMKV    : <MemoryFile.cpp:98::open> open fd[0x66], /data/user/0/in.amazon.mShop.android.shopping/files/mmkv/specialCharacter/3e1af25ed8e24e1ede22beb6cd65d3cb
+08-28 13:41:34.885 25267 25436 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x7161545000], oldPtr [0x0], [/data/user/0/in.amazon.mShop.android.shopping/files/mmkv/specialCharacter/3e1af25ed8e24e1ede22beb6cd65d3cb]
+08-28 13:41:34.886 25267 25436 I MMKV    : <MemoryFile.cpp:98::open> open fd[0x67], /data/user/0/in.amazon.mShop.android.shopping/files/mmkv/specialCharacter/3e1af25ed8e24e1ede22beb6cd65d3cb.crc
+08-28 13:41:34.886 25267 25436 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x7161513000], oldPtr [0x0], [/data/user/0/in.amazon.mShop.android.shopping/files/mmkv/specialCharacter/3e1af25ed8e24e1ede22beb6cd65d3cb.crc]
+08-28 13:41:34.887  5947  5976 D PMonitor:  onProcessDied:pid = 24779,died-uid=10126
+08-28 13:41:34.888  7083  7183 D PMonitor:  onProcessDied:pid = 24779,died-uid=10126
+08-28 13:41:34.890 25267 25419 I in.amazon.mShop.android.shopping/CentralApkUtils: Cannot find amazon authenticator. returning null
+08-28 13:41:34.890 25267 25436 I MMKV    : <MMKV_IO.cpp:214::loadMetaInfoAndCheck> meta file [RCS:ConfigTimestamp] has flag [0]
+08-28 13:41:34.890 25267 25419 I in.amazon.mShop.android.shopping/CentralApkUtils: No central apk detected. This should be a 3P device.
+08-28 13:41:34.891  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 99910185, uidState = 10
+08-28 13:41:34.891  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 1110185, uidState = 10
+08-28 13:41:34.891  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 10185, uidState = 3
+08-28 13:41:34.892 24779 25506 I Ad      : isPersonalizedAdEnabled getAdSettings: 2
+08-28 13:41:34.893 25447 25447 I Perf    : Connecting to perf service.
+08-28 13:41:34.894 25267 25436 I MMKV    : <MMKV_IO.cpp:84::loadFromFile> loading [RCS:ConfigTimestamp] with 2932 actual size, file size 4096, InterProcess 0, meta info version:4
+08-28 13:41:34.894 25267 25436 I MMKV    : <MMKV_IO.cpp:89::loadFromFile> loading [RCS:ConfigTimestamp] with crc 355186003 sequence 69 version 4
+08-28 13:41:34.894 25267 25436 I MMKV    : <MMKV_IO.cpp:133::loadFromFile> loaded [RCS:ConfigTimestamp] with 30 key-values
+08-28 13:41:34.896 23933 23933 D AppActiveReceiver: receive app active broadcast for: com.edgemind.app, install from: null
+08-28 13:41:34.897 25267 25419 I in.amazon.mShop.android.shopping/MAPInitTasks: Start update legacy authportal domain in database if needed
+08-28 13:41:34.897 25267 25419 I in.amazon.mShop.android.shopping/AppToBrowserSSOPluginHelper: AppToBrowserSSOPluginHelper is supported
+08-28 13:41:34.897 25267 25419 I in.amazon.mShop.android.shopping/AppToBrowserSSOPluginHelper: Initializing AppToBrowserSSOPluginHelper taking milliseconds: 0
+08-28 13:41:34.898 25267 25436 W MLFLoggerImpl: Ignored tag[ClientstoreSsnapFileDownloadFromResourcesDuration] due to configuration settings
+08-28 13:41:34.899 25267 25436 W MLFLoggerImpl: Ignored tag[CacheHit] due to configuration settings
+08-28 13:41:34.900 25267 25436 D RemoteConfigProvider: Downloading config from SSNAP: com.amazon.mshop.fast.client_side_invalidation url:https://m.media-amazon.com/images/S/ssnap-msa/prod/runtimeConfig/android/com.amazon.mshop.fast.client_side_invalidation.json numRetries:0
+08-28 13:41:34.901 25267 25419 I in.amazon.mShop.android.shopping/WhatsAppAutoreadPluginHelper: WhatsApp Autoread Plugin has already been initialized.
+08-28 13:41:34.902  2082  2082 W Looper  : Slow dispatch took 106ms main h=com.android.server.job.controllers.QuotaController$QcHandler c=null m=3
+08-28 13:41:34.903 25267 25436 W RemoteConfigProvider: Skipping cache update for com.amazon.mshop.fast.client_side_invalidation: downloaded file is older than cached file
+08-28 13:41:34.904 21408 21445 I Finsky  : [1798] [ContentSync] finished, scheduled=true
+08-28 13:41:34.907 25447 25447 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+08-28 13:41:34.913 25447 25447 I ContentProviderMonitor: PerfMonitor installContentProviders : before publish content providers
+08-28 13:41:34.908 25447 25447 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+08-28 13:41:34.915  2082  6415 D CompatibilityInfo: mCompatibilityFlags - 0
+08-28 13:41:34.915  2082  6415 D CompatibilityInfo: applicationDensity - 440
+08-28 13:41:34.916  2082  6415 D CompatibilityInfo: applicationScale - 1.0
+08-28 13:41:34.916   880   907 I vendor.qti.hardware.servicetracker@1.2-service: startService() is called for servicecom.xiaomi.mipicks/com.xiaomi.market.service.AppActiveStatService
+08-28 13:41:34.916  5947  5976 D PMonitor:  onProcessDied:pid = 23933,died-uid=10123
+08-28 13:41:34.916  7083  7183 D PMonitor:  onProcessDied:pid = 23933,died-uid=10123
+08-28 13:41:34.920 25447 25447 I EdgeMindApplication: EdgeMindApplication starting
+08-28 13:41:34.921  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 10123, uidState = 4
+08-28 13:41:34.922 25447 25447 E libc    : Access denied finding property "ro.vendor.df.effect.conflict"
+08-28 13:41:34.923 25447 25447 E libc    : Access denied finding property "ro.vendor.knock.type"
+08-28 13:41:34.931 25447 25447 I ThermalGuard: ThermalGuard initialized. Current status: raw=0 → state=SAFE
+08-28 13:41:34.932 25447 25447 I EdgeMindApplication: ThermalGuard initialized. Initial state: SAFE
+08-28 13:41:34.907 25447 25447 W om.edgemind.app: type=1400 audit(0.0:2017): avc: denied { read } for name="u:object_r:vendor_displayfeature_prop:s0" dev="tmpfs" ino=17608 scontext=u:r:untrusted_app:s0:c249,c256,c512,c768 tcontext=u:object_r:vendor_displayfeature_prop:s0 tclass=file permissive=0 app=com.edgemind.app
+08-28 13:41:34.935 25447 25447 I MemoryGuard: Memory refresh: availMem=2.02 GiB, totalMem=5.37 GiB, lowMemory=false, threshold=3.00 GiB
+08-28 13:41:34.935 25447 25447 W MemoryGuard: Available memory 2.02 GiB < minimum 3.00 GiB — model load rejected
+08-28 13:41:34.935 25447 25447 I EdgeMindApplication: MemoryGuard initialized. Initial state: INSUFFICIENT
+08-28 13:41:34.935 25447 25447 I EdgeMindApplication: EdgeMindApplication initialization complete
+08-28 13:41:34.937   876   876 I ANDR-PERF-LM: LMPerfGlue: perfmodule_submit_request() 132: perfmodule_submit_request()
+08-28 13:41:34.937   876   876 I ANDR-PERF-LM: Core: getInstance() 84: LM getInstance
+08-28 13:41:34.937   876   876 D ANDR-PERF-LM: Feature: lookup() 101: Feature Name = AppClassifier, total featuers = 3, featureFound = 1
+08-28 13:41:34.937   876   876 D ANDR-PERF-LM: Feature: getData() 112: data.data = 1
+08-28 13:41:34.937   876   876 I ANDR-PERF-LM: FeedbackAPI: getFeedback() 60: app:com.edgemind.app feature:AppClassifier feedback = 1
+08-28 13:41:34.942   880   907 I vendor.qti.hardware.servicetracker@1.2-service: destroyService is called for service : com.xiaomi.discover/com.xiaomi.market.service.AppActiveStatService
+08-28 13:41:34.943 25267 25436 D StagedTaskContainer: STO Startup Task end: AmazonApplication.onCreate.ShopKitServices.WarmUp
+08-28 13:41:34.943 25267 25436 D StagedTaskContainer: STO Startup Task start: AmazonApplication.onCreate.AppStartMessage.Send
+08-28 13:41:34.944 25267 25436 D StagedTaskContainer: STO Startup Task end: AmazonApplication.onCreate.AppStartMessage.Send
+08-28 13:41:34.944  7083  7183 D PMonitor:  onProcessDied:pid = 24779,died-uid=10126
+08-28 13:41:34.945  5947  5976 D PMonitor:  onProcessDied:pid = 24779,died-uid=10126
+08-28 13:41:34.945  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 10126, uidState = 10
+08-28 13:41:34.945 24779 24779 I SystemUpdate-AppActiveStatService: stop forground service
+08-28 13:41:34.948  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 10126, uidState = 19
+08-28 13:41:34.949 25267 25318 D StagedTaskContainer: STO Startup Task end: MShopApplication.onCreate.WeblabClient.triggerAppStartWeblab
+08-28 13:41:34.950 25447 25447 I InferenceForegroundService: InferenceForegroundService created
+08-28 13:41:34.950 25447 25447 I InferenceForegroundService: onStartCommand: starting foreground service
+08-28 13:41:34.952  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 10255, uidState = 19
+08-28 13:41:34.953 25267 25267 I Choreographer: Skipped 54 frames!  The application may be doing too much work on its main thread.
+08-28 13:41:34.954 25267 25267 W Looper  : PerfMonitor doFrame : time=0ms vsyncFrame=15870 latency=901ms procState=19 historyMsgCount=5 (msgIndex=1 wall=1208ms seq=2 running=349ms runnable=139ms io=256ms binder=43ms late=1ms h=android.app.ActivityThread$H w=110) (msgIndex=2 wall=51ms seq=3 running=1ms late=209ms h=android.os.Handler c=com.bugsnag.android.AnrPlugin$load$1) (msgIndex=5 wall=193ms seq=6 running=22ms runnable=33ms io=6ms binder=4ms late=1293ms h=android.app.ActivityThread$H w=121)
+08-28 13:41:34.966  5947  5976 D PMonitor:  onProcessDied:pid = 25447,died-uid=10249
+08-28 13:41:34.966  7083  7183 D PMonitor:  onProcessDied:pid = 25447,died-uid=10249
+08-28 13:41:34.967 25267 25414 I SecureStorageOperation: Secure Storage initialised successfully
+08-28 13:41:34.967 25267 25414 I DynamicConfigOperation: Dynamic config service initialised successfully : com.amazon.mshop.kubersmartintent.config.prod
+08-28 13:41:34.968 25267 25414 I NexusEventOperation: Nexus metric logger initialized successfully
+08-28 13:41:34.977 25447 25519 I MemoryGuard: Memory refresh: availMem=2.01 GiB, totalMem=5.37 GiB, lowMemory=false, threshold=3.00 GiB
+08-28 13:41:34.978 25447 25519 W MemoryGuard: Available memory 2.01 GiB < minimum 3.00 GiB — model load rejected
+08-28 13:41:34.978 25447 25519 I InferenceForegroundService: Memory state before engine init: INSUFFICIENT
+08-28 13:41:34.978 25447 25519 E InferenceForegroundService: Memory state is INSUFFICIENT (INSUFFICIENT). Engine initialization deferred — model load rejected. Minimum required: 3.0 GiB free. Service will remain running in standby until memory improves.
+08-28 13:41:34.980 25267 25414 I DeviceDetailsFor2FAManager: getEncryptedDeviceAndSimDetails invoked
+08-28 13:41:34.980  2082  2612 W ActivityManager: Foreground service started from background can not have location/camera/microphone access: service com.xiaomi.mipicks/com.xiaomi.market.service.AppActiveStatService
+08-28 13:41:34.980 25447 25518 I InferenceForegroundService: Thermal state → SAFE
+08-28 13:41:34.981 25447 25518 D InferenceForegroundService: Thermal: SAFE — inference may proceed normally
+08-28 13:41:34.981  5947  5976 D PMonitor:  onProcessDied:pid = 23933,died-uid=10123
+08-28 13:41:34.981  7083  7183 D PMonitor:  onProcessDied:pid = 23933,died-uid=10123
+08-28 13:41:34.989  2082  2325 D WifiSlaveNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=177, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10255 AdministratorUids: [] RequestorUid: 10255 RequestorPackageName: in.amazon.mShop.android.shopping] ] with score 50 and providerId 4
+08-28 13:41:34.989  2082  2325 D WifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=177, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10255 AdministratorUids: [] RequestorUid: 10255 RequestorPackageName: in.amazon.mShop.android.shopping] ] with score 50 and providerId 4
+08-28 13:41:34.989  2082  2325 D UntrustedWifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=177, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10255 AdministratorUids: [] RequestorUid: 10255 RequestorPackageName: in.amazon.mShop.android.shopping] ] with score 50 and providerId 4
+08-28 13:41:34.989  2082  2325 D UntrustedWifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=177, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10255 AdministratorUids: [] RequestorUid: 10255 RequestorPackageName: in.amazon.mShop.android.shopping] ] with score 50 and providerId 4
+08-28 13:41:34.989  2082  2496 D Ethernet: got request NetworkRequest [ TRACK_DEFAULT id=177, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10255 AdministratorUids: [] RequestorUid: 10255 RequestorPackageName: in.amazon.mShop.android.shopping] ] with score 50 and providerId 4
+08-28 13:41:34.989  2082  2495 D WIFI_AWARE_FACTORY: got request NetworkRequest [ TRACK_DEFAULT id=177, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10255 AdministratorUids: [] RequestorUid: 10255 RequestorPackageName: in.amazon.mShop.android.shopping] ] with score 50 and providerId 4
+08-28 13:41:34.989  3015  3015 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=177, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10255 AdministratorUids: [] RequestorUid: 10255 RequestorPackageName: in.amazon.mShop.android.shopping] ] with score 50 and providerId 4
+08-28 13:41:34.993 21408 21448 I Finsky  : [1799] WM::SCH: Logging work initialize for 12-1
+08-28 13:41:34.995 25267 25345 D StagedTaskContainer: STO Startup Task end: MShopApplication.onCreate.SsnapService.WarmUp
+08-28 13:41:34.998 21408 21460 I Finsky  : [1806] SCH: Scheduling phonesky job Id: 12-1, CT: 1787904694574, Constraints: [{ L: 15000, D: 86400000, C: CHARGING_NONE, I: IDLE_NONE, N: NET_ANY, B: BATTERY_ANY }]
+08-28 13:41:34.999 21408 21462 I Finsky  : [1808] SCH: Scheduling 0 system job(s)
+08-28 13:41:35.000 21408 21462 I Finsky  : [1808] [ContentSync] finished, scheduled=true
+08-28 13:41:35.009 24066 24753 I PermissionControllerServiceImpl: Updating user sensitive for uid 10249
+08-28 13:41:35.009 25267 25355 W EventPlannerDataRetriever: Failed to retrieve events data
+08-28 13:41:35.010  2082  2192 W Looper  : Drained
+08-28 13:41:35.010 25447 25447 I ThermalGuard: Thermal status changed: raw=0 → state=SAFE
+08-28 13:41:35.019 25267 25355 D StagedTaskContainer: STO Startup Task end: AmazonApplication.onCreate.AppStartListenersGroup2.Run
+08-28 13:41:35.023 25267 25267 D UserActionTimeProvider: reset()
+08-28 13:41:35.029 25267 25267 D WeblabUtil: PFEEventReportMigration weblab treatment: C
+08-28 13:41:35.029 25267 25267 D com.amazon.mShop.push.registration.PFEEventReportServiceFactory: Using PFEEventReportService for handling reporting logic (SpearAndroidApi)
+08-28 13:41:35.029 25267 25267 D PushV2-PushNotificationsApi: Initializing PushNotificationsComponent
+08-28 13:41:35.033 25267 25267 W WeblabServiceImpl: weblab: MSHOP_ANDROID_PUSH_REFACTOR_STATE_MANAGEMENT_1368989 is not in AppStartWeblabAllowList.java
+08-28 13:41:35.033 25267 25267 D PushV2-WeblabUtil: Push state management weblab treatment: C
+08-28 13:41:35.034 25267 25267 D PushV2-PushNotificationsApi: New push state management is disabled, not starting KiangStateManager
+08-28 13:41:35.034   880   907 I vendor.qti.hardware.servicetracker@1.2-service: bindService is called for service : in.amazon.mShop.android.shopping/com.amazon.mShop.push.fcm.PushTokenRegistrationOrchestrator$PushTokenRegistrationJobService and for client system
+08-28 13:41:35.034   880   907 I vendor.qti.hardware.servicetracker@1.2-service: total connections for service : in.amazon.mShop.android.shopping/com.amazon.mShop.push.fcm.PushTokenRegistrationOrchestrator$PushTokenRegistrationJobServiceare :1
+08-28 13:41:35.034   880   907 I vendor.qti.hardware.servicetracker@1.2-service: total connections for client : systemare :28
+08-28 13:41:35.038  2082  6415 D CompatibilityInfo: mCompatibilityFlags - 0
+08-28 13:41:35.038  2082  6415 D CompatibilityInfo: applicationDensity - 440
+08-28 13:41:35.038  2082  6415 D CompatibilityInfo: applicationScale - 1.0
+08-28 13:41:35.038   880   907 I vendor.qti.hardware.servicetracker@1.2-service: startService() is called for servicein.amazon.mShop.android.shopping/com.amazon.mShop.push.fcm.PushTokenRegistrationOrchestrator$PushTokenRegistrationJobService
+08-28 13:41:35.038  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 10255, uidState = 8
+08-28 13:41:35.042 25267 25267 I PushTokenRegistrationJobService: Executing token Register job forandroid.app.job.JobParameters@49fcc4d
+08-28 13:41:35.043 25267 25543 D PushNotificationManager: >>> PNM: === updateDeviceToken ===
+08-28 13:41:35.043 25267 25543 D PushNotificationManager: >>> PNM: RegistrationID: cLB1-JZ5Qeq-7Bw0hcEnK0:APA91bF-UHw71TmeoZdXwWtv1wkRAInFO36S7GQYXa7SYmjRoZLvRCdR70a0leqLh32ebdIJChBTrg2-EczonNiN1f2tI7BA4fUC1vw0IImOfEdoteFASgI
+08-28 13:41:35.043 25267 25543 D PushNotificationManager: >>> PNM: Last registration ID: cLB1-JZ5Qeq-7Bw0hcEnK0:APA91bF-UHw71TmeoZdXwWtv1wkRAInFO36S7GQYXa7SYmjRoZLvRCdR70a0leqLh32ebdIJChBTrg2-EczonNiN1f2tI7BA4fUC1vw0IImOfEdoteFASgI
+08-28 13:41:35.044   880   907 I vendor.qti.hardware.servicetracker@1.2-service: unbindService is called for service : in.amazon.mShop.android.shopping/com.amazon.mShop.push.fcm.PushTokenRegistrationOrchestrator$PushTokenRegistrationJobService and for client system
+08-28 13:41:35.044   880   907 I vendor.qti.hardware.servicetracker@1.2-service: size of service connections for service: in.amazon.mShop.android.shopping/com.amazon.mShop.push.fcm.PushTokenRegistrationOrchestrator$PushTokenRegistrationJobServiceafter removal is 0
+08-28 13:41:35.044   880   907 I vendor.qti.hardware.servicetracker@1.2-service: size of client connections for client: systemafter removal is 27
+08-28 13:41:35.044   880   907 I vendor.qti.hardware.servicetracker@1.2-service: destroyService is called for service : in.amazon.mShop.android.shopping/com.amazon.mShop.push.fcm.PushTokenRegistrationOrchestrator$PushTokenRegistrationJobService
+08-28 13:41:35.046  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 10255, uidState = 10
+08-28 13:41:35.053   880   907 I vendor.qti.hardware.servicetracker@1.2-service: destroyService is called for service : com.xiaomi.mipicks/com.xiaomi.market.service.AppActiveStatService
+08-28 13:41:35.053  5947  5976 D PMonitor:  onProcessDied:pid = 23933,died-uid=10123
+08-28 13:41:35.053  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 10123, uidState = 10
+08-28 13:41:35.055  7083  7183 D PMonitor:  onProcessDied:pid = 23933,died-uid=10123
+08-28 13:41:35.055  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 10123, uidState = 19
+08-28 13:41:35.056 25267 25529 I SecureStorageOperation: Data successfully fetched from Secure storage : amzn1.account.AHZMC6ZBM2HW6VRXIFZFJBIXUOPA-aa5a9bf7529d25aa
+08-28 13:41:35.056  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 10255, uidState = 19
+08-28 13:41:35.056 25267 25529 D SecureStorageManager: Data fetched from Secure storage : {
+08-28 13:41:35.056 25267 25529 D SecureStorageManager:     "upiInstrument": "[{\"deviceSignature\":\"0e48215047c24fec5cd66ba97e661cde82782ce163d2a7d51bd411d382656ef5\",\"issuingPsp\":\"AXIS\",\"isValidDFP\":false,\"creationTime\":\"1726660599\",\"simId\":\"\"}, {\"deviceSignature\":\"6a4b427cf114fd436f56810b3f4522378c063bc285f9c2d3c2a35c1d33916559\",\"issuingPsp\":\"APB\",\"isValidDFP\":false,\"creationTime\":\"1681274256\",\"simId\":\"\"}, {\"deviceSignature\":\"0e48215047c24fec5cd66ba97e661cde82782ce163d2a7d51bd411d382656ef5\",\"issuingPsp\":\"AXIS\",\"isValidDFP\":false,\"creationTime\":\"1632587327\",\"simId\":\"\"}]",
+08-28 13:41:35.056 25267 25529 D SecureStorageManager:     "lastEvent": "LOGIN",
+08-28 13:41:35.056 25267 25529 D SecureStorageManager:     "updatedAt": "1785675005831",
+08-28 13:41:35.056 25267 25529 D SecureStorageManager:     "overallStatus": false,
+08-28 13:41:35.056 25267 25529 D SecureStorageManager:     "directedCustomerId": "amzn1.account.AHZMC6ZBM2HW6VRXIFZFJBIXUOPA",
+08-28 13:41:35.056 25267 25529 D SecureStorageManager:     "reasonCode": "PERMISSION_NOT_GRANTED",
+08-28 13:41:35.056 25267 25529 D SecureStorageManager:     "eventCount": 1
+08-28 13:41:35.056 25267 25529 D SecureStorageManager: }
+08-28 13:41:35.059 25267 25414 I DeviceDetailsFor2FAManager: DeviceDetails obtained for 2FA are: {"deviceDetails":{"androidId":"aa5a9bf7529d25aa","deviceId":"aa5a9bf7529d25aa"},"directedCustomerId":"amzn1.account.AHZMC6ZBM2HW6VRXIFZFJBIXUOPA","fallbackReasonCode":"PERMISSION_NOT_GRANTED","overallDfpStatus":"false","simDetails":[],"smartIntentReasonCode":"PERMISSION_NOT_GRANTED","updatedAt":"1785675005831"}
+08-28 13:41:35.060 25267 25414 D NexusEventManager: Transformed nexus event to json successfully: 02e49ce0-e813-4ca9-9280-eec230e160ea
+08-28 13:41:35.063   880   907 I vendor.qti.hardware.servicetracker@1.2-service: bindService is called for service : in.swiggy.android.instamart/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService and for client system
+08-28 13:41:35.063   880   907 I vendor.qti.hardware.servicetracker@1.2-service: total connections for service : in.swiggy.android.instamart/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerServiceare :1
+08-28 13:41:35.063   880   907 I vendor.qti.hardware.servicetracker@1.2-service: total connections for client : systemare :28
+08-28 13:41:35.065  2082  2082 D CompatibilityInfo: mCompatibilityFlags - 0
+08-28 13:41:35.065  2082  2082 D CompatibilityInfo: applicationDensity - 440
+08-28 13:41:35.065  2082  2082 D CompatibilityInfo: applicationScale - 1.0
+08-28 13:41:35.065 25267 25551 D MobileLoggingSuite: Executing Sushi InitializationTask...
+08-28 13:41:35.065 25267 25551 D MobileLoggingSuite: Created Sushi FileUploader with source group 'com.amazon.eel.mls.nexus.msh.prod.nexus'
+08-28 13:41:35.065 25267 25551 D MobileLoggingSuite: Created Sushi FileWriteLoader with parentDir '/data/user/0/in.amazon.mShop.android.shopping/files/mls/nexus/sushi_normal
+08-28 13:41:35.065 25267 25551 D MobileLoggingSuite: No previous Sushi file found
+08-28 13:41:35.065   880   907 I vendor.qti.hardware.servicetracker@1.2-service: startService() is called for servicein.swiggy.android.instamart/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+08-28 13:41:35.065 25267 25551 D MobileLoggingSuite: Created Sushi FileRingLoader with parentDir '/data/user/0/in.amazon.mShop.android.shopping/files/mls/nexus/sushi_normal' and maxStorageBytes 2097152
+08-28 13:41:35.065  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 10298, uidState = 8
+08-28 13:41:35.065 25267 25551 D MobileLoggingSuite: Finished executing Sushi InitializationTask
+08-28 13:41:35.065  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 10255, uidState = 8
+08-28 13:41:35.066 25267 25551 D MobileLoggingSuite: Unschedule BackupUploader for MLS with jobId: -1578490490
+08-28 13:41:35.070 23933 25548 I TetheringManager: registerTetheringEventCallback:com.xiaomi.mipicks
+08-28 13:41:35.076   880   907 I vendor.qti.hardware.servicetracker@1.2-service: bindService is called for service : in.amazon.mShop.android.shopping/com.amazon.mls.config.internal.sushi.uploader.BackupUploaderService and for client system
+08-28 13:41:35.076   880   907 I vendor.qti.hardware.servicetracker@1.2-service: total connections for service : in.amazon.mShop.android.shopping/com.amazon.mls.config.internal.sushi.uploader.BackupUploaderServiceare :1
+08-28 13:41:35.076   880   907 I vendor.qti.hardware.servicetracker@1.2-service: total connections for client : systemare :29
+08-28 13:41:35.076  2082  6415 D CompatibilityInfo: mCompatibilityFlags - 0
+08-28 13:41:35.076  2082  6415 D CompatibilityInfo: applicationDensity - 440
+08-28 13:41:35.076  2082  6415 D CompatibilityInfo: applicationScale - 1.0
+08-28 13:41:35.076   880   907 I vendor.qti.hardware.servicetracker@1.2-service: startService() is called for servicein.amazon.mShop.android.shopping/com.amazon.mls.config.internal.sushi.uploader.BackupUploaderService
+08-28 13:41:35.077 23933 25548 I MMKV    : <MemoryFile.cpp:97::open> open fd[0x46], /data/user/0/com.xiaomi.mipicks/files/mmkv/app_chooser
+08-28 13:41:35.077 23933 25548 I MMKV    : <MemoryFile.cpp:97::open> open fd[0x47], /data/user/0/com.xiaomi.mipicks/files/mmkv/app_chooser.crc
+08-28 13:41:35.078 25267 25551 D MobileLoggingSuite: Successfully scheduled upload job; sourceGroup: com.amazon.eel.mls.nexus.msh.prod.nexus; sushiDir: /data/user/0/in.amazon.mShop.android.shopping/files/mls/nexus/sushi_normal
+08-28 13:41:35.081 23933 25548 I MMKV    : <MMKV_IO.cpp:81::loadFromFile> loading [app_chooser] with 0 actual size, file size 4096, InterProcess 1, meta info version:1
+08-28 13:41:35.081 23933 25548 I MMKV    : <MMKV_IO.cpp:130::loadFromFile> loaded [app_chooser] with 0 key-values
+08-28 13:41:35.081 25267 25267 D MobileLoggingSuite: MLS backup uploader job started
+08-28 13:41:35.081   880   907 I vendor.qti.hardware.servicetracker@1.2-service: unbindService is called for service : in.swiggy.android.instamart/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService and for client system
+08-28 13:41:35.081   880   907 I vendor.qti.hardware.servicetracker@1.2-service: size of service connections for service: in.swiggy.android.instamart/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerServiceafter removal is 0
+08-28 13:41:35.082   880   907 I vendor.qti.hardware.servicetracker@1.2-service: size of client connections for client: systemafter removal is 28
+08-28 13:41:35.082 25267 25267 D MobileLoggingSuite: Not executing backup job because it was called to soon after it was scheduled
+08-28 13:41:35.082 23933 25548 I MMKV    : <MemoryFile.cpp:97::open> open fd[0x55], /data/user/0/com.xiaomi.mipicks/files/mmkv/mini_card
+08-28 13:41:35.082   880   907 I vendor.qti.hardware.servicetracker@1.2-service: destroyService is called for service : in.swiggy.android.instamart/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+08-28 13:41:35.082 23933 25548 I MMKV    : <MemoryFile.cpp:97::open> open fd[0x56], /data/user/0/com.xiaomi.mipicks/files/mmkv/mini_card.crc
+08-28 13:41:35.083  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 10298, uidState = 10
+08-28 13:41:35.084   880   907 I vendor.qti.hardware.servicetracker@1.2-service: unbindService is called for service : in.amazon.mShop.android.shopping/com.amazon.mls.config.internal.sushi.uploader.BackupUploaderService and for client system
+08-28 13:41:35.084   880   907 I vendor.qti.hardware.servicetracker@1.2-service: size of service connections for service: in.amazon.mShop.android.shopping/com.amazon.mls.config.internal.sushi.uploader.BackupUploaderServiceafter removal is 0
+08-28 13:41:35.084   880   907 I vendor.qti.hardware.servicetracker@1.2-service: size of client connections for client: systemafter removal is 27
+08-28 13:41:35.084   880   907 I vendor.qti.hardware.servicetracker@1.2-service: destroyService is called for service : in.amazon.mShop.android.shopping/com.amazon.mls.config.internal.sushi.uploader.BackupUploaderService
+08-28 13:41:35.085  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 10255, uidState = 10
+08-28 13:41:35.085 23933 25548 I MMKV    : <MMKV_IO.cpp:81::loadFromFile> loading [mini_card] with 0 actual size, file size 4096, InterProcess 1, meta info version:1
+08-28 13:41:35.085 23933 25548 I MMKV    : <MMKV_IO.cpp:130::loadFromFile> loaded [mini_card] with 0 key-values
+08-28 13:41:35.088  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 10298, uidState = 19
+08-28 13:41:35.097 25267 25344 D DNSPrefetchTask: resolved domain succeed: www.amazon.in
+08-28 13:41:35.097 25267 25344 D StagedTaskContainer: STO Startup Task end: MShopApplication.onCreate.DNSPrefetch
+08-28 13:41:35.099  2082  2323 I MiuiNetworkPolicy: updateUidState uid = 10255, uidState = 19
+08-28 13:41:35.117  2082  2082 W NotificationHistory: Attempted to add notif for locked/gone/disabled user 0
+08-28 13:41:35.119  5947  5947 W FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'enable_push_monitor_broadcast'.
+08-28 13:41:35.119  3054  3054 I notification_pop_view:  notification is connected:true
+08-28 13:41:35.122  3512  3512 I NotificationController: onNotificationPosted: mSmartTravelNotificationMap 0
+08-28 13:41:35.123  2684  2684 E NotifCollection: No notification to remove with key 0|com.xiaomi.discover|200475979|null|10126
+08-28 13:41:35.124  7083  7083 W PushService: [Tid:2] this sbn is not at my space
+08-28 13:41:35.141 23933 25548 I Ad      : isPersonalizedAdEnabled getAdSettings: 2
+08-28 13:41:35.125  7083  7083 W PushService: [Tid:2] this sbn is not at my space
+08-28 13:41:35.150 23933 25548 E DeviceUtils: static init(): Load Class Exception:java.lang.NoSuchMethodException: com.miui.performance.DeviceLevelUtils.getMiuiLiteVersion []
+08-28 13:41:35.150 23933 25548 E DeviceUtils: static init: ComputilityLevel Load Class Exception:java.lang.ClassNotFoundException: Didn't find class "com.miui.performance.ComputilityLevelUtils" on path: DexPathList[[zip file "/system/framework/MiuiBooster.jar"],nativeLibraryDirectories=[/system/lib64, /system/system_ext/lib64]]
+08-28 13:41:35.150 23933 25548 E DeviceUtils: static init(): Load MiuiMiddle Class Exception:java.lang.NoSuchMethodException: com.miui.performance.DeviceLevelUtils.getMiuiMiddleVersion []
+08-28 13:41:35.171  2082  2082 W NotificationHistory: Attempted to add notif for locked/gone/disabled user 0
+08-28 13:41:35.173  4891 14221 W PSIUtils: MEMORY_SOME|48214412|615370048960
+08-28 13:41:35.173  5530  5735 V h       : flags=98
+08-28 13:41:35.175  5947  5947 W FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'enable_push_monitor_broadcast'.
+08-28 13:41:35.175  7083  7083 W PushService: [Tid:2] this sbn is not at my space
+08-28 13:41:35.179  3054  3054 I notification_pop_view:  notification is connected:true
+08-28 13:41:35.179  3512  3512 I NotificationController: onNotificationPosted: mSmartTravelNotificationMap 0
+08-28 13:41:35.182  5530  5735 V h       : ret=0
+08-28 13:41:35.187  2082  2082 W NotificationHistory: Attempted to add notif for locked/gone/disabled user 0
+08-28 13:41:35.190  3512  3512 I NotificationController: onNotificationPosted: mSmartTravelNotificationMap 0
+08-28 13:41:35.191  7083  7083 W PushService: [Tid:2] this sbn is not at my space
+08-28 13:41:35.191  5947  5947 W FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'enable_push_monitor_broadcast'.
+08-28 13:41:35.194  3054  3054 I notification_pop_view:  notification is connected:true
+08-28 13:41:35.196  7083  7083 W PushService: [Tid:2] this sbn is not at my space
+08-28 13:41:35.211  2684  2684 D InterruptionStateProvider: No bubble up: not allowed to bubble: 0|com.edgemind.app|1001|null|10249
+08-28 13:41:35.211  2684  2684 D InterruptionStateProvider: No heads up: unimportant notification: 0|com.edgemind.app|1001|null|10249
+08-28 13:41:35.212  2684  2684 E NotifCollection: No notification to remove with key 0|com.xiaomi.mipicks|-1202793518|null|10123
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: Failed to inflate resource in the background! Retrying on the UI thread
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: android.view.InflateException: Binary XML file line #3 in com.android.systemui:layout/status_bar_notification_row: Animators may only be run on Looper threads
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: Caused by: android.util.AndroidRuntimeException: Animators may only be run on Looper threads
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at android.animation.AnimatorSet.start(AnimatorSet.java:705)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at android.animation.AnimatorSet.start(AnimatorSet.java:684)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at android.animation.StateListAnimator.start(StateListAnimator.java:188)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at android.animation.StateListAnimator.setState(StateListAnimator.java:181)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at android.view.View.drawableStateChanged(View.java:23521)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at android.widget.TextView.drawableStateChanged(TextView.java:5853)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at android.view.View.originalRefreshDrawableState(View.java:23594)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at android.view.View$14.refreshDrawableState(View.java:30912)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at com.miui.internal.variable.v21.Android_View_View_class.callOriginalRefreshDrawableState(Android_View_View_class.java:61)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at com.miui.internal.variable.v16.Android_View_View_class_common.handleRefreshDrawableState(Android_View_View_class_common.java:90)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at com.miui.internal.variable.v21.Android_View_View_class.access$000(Android_View_View_class.java:22)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at com.miui.internal.variable.v21.Android_View_View_class$1.refreshDrawableState(Android_View_View_class.java:88)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at android.view.View.refreshDrawableState(View.java:23585)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at com.miui.internal.util.TaggingDrawableHelper.tagView(TaggingDrawableHelper.java:203)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at com.miui.internal.util.TaggingDrawableHelper.tagChildSequenceState(TaggingDrawableHelper.java:59)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at com.miui.internal.variable.v16.Android_View_ViewGroup_class.handleOnChildVisibilityChanged(Android_View_ViewGroup_class.java:144)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at com.miui.internal.variable.v21.Android_View_ViewGroup_class.access$300(Android_View_ViewGroup_class.java:23)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at com.miui.internal.variable.v21.Android_View_ViewGroup_class$1.onChildVisibilityChanged(Android_View_ViewGroup_class.java:186)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at android.view.ViewGroup.onChildVisibilityChanged(ViewGroup.java:1592)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at android.view.View.setFlags(View.java:16291)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at android.view.View.setVisibility(View.java:11786)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at com.android.systemui.statusbar.notification.row.ActivatableNotificationView.updateBackground(ActivatableNotificationView.java:598)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at com.android.systemui.statusbar.notification.row.MiuiExpandableNotificationRow.updateBackground(MiuiExpandableNotificationRow.kt:57)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at com.android.systemui.statusbar.notification.row.ActivatableNotificationView.onFinishInflate(ActivatableNotificationView.java:205)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at com.android.systemui.statusbar.notification.row.ExpandableNotificationRow.onFinishInflate(ExpandableNotificationRow.java:1750)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at com.android.systemui.statusbar.notification.row.MiuiExpandableNotificationRow.onFinishInflate(MiuiExpandableNotificationRow.kt:47)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:1138)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at android.view.LayoutInflater.rInflateChildren(LayoutInflater.java:1086)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:684)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:536)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at androidx.asynclayoutinflater.view.AsyncLayoutInflater$InflateThread.runInner(AsyncLayoutInflater.java:189)
+08-28 13:41:35.239  2684  3623 W AsyncLayoutInflater: 	at androidx.asynclayoutinflater.view.AsyncLayoutInflater$InflateThread.run(AsyncLayoutInflater.java:203)
+08-28 13:41:35.244  2684  2684 E ResourceLoader: getXmlRoot local inputStream is null
+08-28 13:41:35.244  2684  2684 E ScreenElementRoot: load error, manifest root is null
+08-28 13:41:35.282  2684  2684 D NotifBadge: update app badge num: com.edgemind.app/,num=0,isAllowed=false,userId=0
+08-28 13:41:35.288  2082  2092 I system_server: Background concurrent copying GC freed 452762(22MB) AllocSpace objects, 15(364KB) LOS objects, 26% free, 65MB/89MB, paused 83us total 172.719ms
+08-28 13:41:35.304  2082  2094 W System  : A resource failed to call close. 
+08-28 13:41:35.357  1073  1073 W batteryd: type=1400 audit(0.0:2018): avc: denied { dac_override } for capability=1 scontext=u:r:batteryd:s0 tcontext=u:r:batteryd:s0 tclass=capability permissive=0
+08-28 13:41:35.367  5530  5530 E PowerUtils: getSurfaceTemprature error
+08-28 13:41:35.367  5530  5530 E PowerUtils: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.lang.String.trim()' on a null object reference
+08-28 13:41:35.367  5530  5530 E PowerUtils: 	at hd.w.A(Unknown Source:21)
+08-28 13:41:35.367  5530  5530 E PowerUtils: 	at yc.o.u(Unknown Source:32)
+08-28 13:41:35.367  5530  5530 E PowerUtils: 	at yc.o$b.onReceive(Unknown Source:14)
+08-28 13:41:35.367  5530  5530 E PowerUtils: 	at android.app.LoadedApk$ReceiverDispatcher$Args.lambda$getRunnable$0$LoadedApk$ReceiverDispatcher$Args(LoadedApk.java:1564)
+08-28 13:41:35.367  5530  5530 E PowerUtils: 	at android.app.-$$Lambda$LoadedApk$ReceiverDispatcher$Args$_BumDX2UKsnxLVrE6UJsJZkotuA.run(Unknown Source:2)
+08-28 13:41:35.367  5530  5530 E PowerUtils: 	at android.os.Handler.handleCallback(Handler.java:938)
+08-28 13:41:35.367  5530  5530 E PowerUtils: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-28 13:41:35.367  5530  5530 E PowerUtils: 	at android.os.Looper.loop(Looper.java:236)
+08-28 13:41:35.367  5530  5530 E PowerUtils: 	at android.app.ActivityThread.main(ActivityThread.java:8061)
+08-28 13:41:35.367  5530  5530 E PowerUtils: 	at java.lang.reflect.Method.invoke(Native Method)
+08-28 13:41:35.367  5530  5530 E PowerUtils: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:656)
+08-28 13:41:35.367  5530  5530 E PowerUtils: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:967)
+08-28 13:41:35.367  5530  5530 I PowerSaveService: onReceive: android.intent.action.BATTERY_CHANGED
+08-28 13:41:35.368  5530  5530 I PowerNoticeUI: handleBatteryChanged oldPlugType 2 mPlugType 2 oldBatteryLevel 92 mBatteryLevel 92 temperature 342
+08-28 13:41:35.368  5530  5530 I ChargerBatteryIntelligenceReceiver: onBatteryChanged temperature：34,plugType:2
+08-28 13:41:35.368  6880  7073 D PowerCheckerService: onBatteryChanged, mBatteryLevel = 92, status = 2, level = 92, plug = 2, scale = 100
+08-28 13:41:35.369  2684  2684 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+08-28 13:41:35.369  2684  2684 D BatteryController: onReceive: Intent = Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) } action = android.intent.action.BATTERY_CHANGED
+08-28 13:41:35.370  2959  2959 D DeviceStatisticsService: chargerType=2 batteryLevel=92 totalBatteryCapacity=3793100
+08-28 13:41:35.371 13208 13208 D DeviceStatisticsService: chargerType=2 batteryLevel=92 totalBatteryCapacity=3793100
+08-28 13:41:35.423   817  1686 I SDM     : HWCDisplayBuiltIn::parseOutputBuffer: w 1080 h 2340 stride 1088 size 10186752 Bpp 4
+08-28 13:41:35.424   817  1686 I SDM     : HWCDisplayBuiltIn::parseBrightness: set DBV 268.000000 brightness:538
+08-28 13:41:35.424   817  1686 I SDM     : HWCDisplayBuiltIn::parseBrightness: R:6.000000, G:6.000000, B:6.000000
+08-28 13:41:35.424   817  1686 D SDM     : HWCDisplayBuiltIn::parseBrightness: out partial brightness:0.000000, (r, g, b): { 6.000000, 6.000000, 6.000000 }
+08-28 13:41:35.424   817  1686 I libsensor-C2SNotifier: NotifySensorThread will begin for SendClientRGB !
+08-28 13:41:35.424   817  1686 I libsensor-C2SNotifier: SendMsgThread has begin for SendClientRGB !
+08-28 13:41:35.425   817 25566 I libsensor-C2SNotifier: SendMsgThread threadLoop starting !
+08-28 13:41:35.425   817 25566 I libsensor-C2SNotifier: Sensor: notify type: 5, value: -5
+08-28 13:41:35.425   817 25566 I libsensor-C2SNotifier: send message to citsensorservice, cb function: 20, ret: 1086324736
+08-28 13:41:35.425   817 25566 I libsensor-C2SNotifier: SendMsgThread threadLoop correct and msg have been send !
+08-28 13:41:35.450 25267 25443 D ComponentRoutingService: Finish init RoutingEngine
+08-28 13:41:35.518  3512  3570 W SuperWallpaperReceiver: task run 
+08-28 13:41:35.518  3512  3570 I DozeHost: updateWallpaperSupportsAmbientModeState: wallpaperInfo == null
+08-28 13:41:35.518  3512  3570 I MiuiAod.Utils: setUsingSuperWallpaperStyleState: false
+08-28 13:41:35.589   817  1686 I SDM     : HWCDisplayBuiltIn::parseOutputBuffer: w 1080 h 2340 stride 1088 size 10186752 Bpp 4
+08-28 13:41:35.590   817  1686 I SDM     : HWCDisplayBuiltIn::parseBrightness: set DBV 268.000000 brightness:538
+08-28 13:41:35.590   817  1686 I SDM     : HWCDisplayBuiltIn::parseBrightness: R:6.000000, G:6.000000, B:6.000000
+08-28 13:41:35.590   817  1686 D SDM     : HWCDisplayBuiltIn::parseBrightness: out partial brightness:0.000000, (r, g, b): { 6.000000, 6.000000, 6.000000 }
+08-28 13:41:35.590   817  1686 I libsensor-C2SNotifier: NotifySensorThread will begin for SendClientRGB !
+08-28 13:41:35.590   817  1686 I libsensor-C2SNotifier: SendMsgThread has begin for SendClientRGB !
+08-28 13:41:35.590   817 25569 I libsensor-C2SNotifier: SendMsgThread threadLoop starting !
+08-28 13:41:35.590   817 25569 I libsensor-C2SNotifier: Sensor: notify type: 5, value: -5
+08-28 13:41:35.590   817 25569 I libsensor-C2SNotifier: send message to citsensorservice, cb function: 20, ret: 1086324736
+08-28 13:41:35.591   817 25569 I libsensor-C2SNotifier: SendMsgThread threadLoop correct and msg have been send !
+08-28 13:41:35.885 25267 25502 W MLFLoggerImpl: Ignored tag[ClientstoreSsnapFileDownloadDuration] due to configuration settings
+08-28 13:41:35.886 25267 25502 D RemoteConfigProvider: Downloading config from SSNAP: com.amazon.mshop.ssnap.loggingframework.config url:https://m.media-amazon.com/images/S/ssnap-msa/prod/runtimeConfig/android/com.amazon.mshop.ssnap.loggingframework.config.json numRetries:0
+08-28 13:41:35.888 25267 25508 W MLFLoggerImpl: Ignored tag[ClientstoreSsnapFileDownloadDuration] due to configuration settings
+08-28 13:41:35.888 25267 25512 W MLFLoggerImpl: Ignored tag[ClientstoreSsnapFileDownloadDuration] due to configuration settings
+08-28 13:41:35.889 25267 25512 D RemoteConfigProvider: Downloading config from SSNAP: com.amazon.mshop.kuberandroidlib.config.prod url:https://m.media-amazon.com/images/S/ssnap-msa/prod/runtimeConfig/android/com.amazon.mshop.kuberandroidlib.config.prod.json numRetries:0
+08-28 13:41:35.889 25267 25502 W RemoteConfigProvider: Skipping cache update for com.amazon.mshop.ssnap.loggingframework.config: downloaded file is older than cached file
+08-28 13:41:35.890 25267 25512 W RemoteConfigProvider: Skipping cache update for com.amazon.mshop.kuberandroidlib.config.prod: downloaded file is older than cached file
+08-28 13:41:35.895 25267 25515 W MLFLoggerImpl: Ignored tag[ClientstoreSsnapFileDownloadDuration] due to configuration settings
+08-28 13:41:35.895 25267 25510 W MLFLoggerImpl: Ignored tag[ClientstoreSsnapFileDownloadDuration] due to configuration settings
+08-28 13:41:35.896 25267 25515 D RemoteConfigProvider: Downloading config from SSNAP: com.amazon.mshop.kubersmartintent.config.prod url:https://m.media-amazon.com/images/S/ssnap-msa/prod/runtimeConfig/android/com.amazon.mshop.kubersmartintent.config.prod.json numRetries:0
+08-28 13:41:35.896 25267 25510 D RemoteConfigProvider: Downloading config from SSNAP: com.amazon.mshop.core.cacheinvalidation url:https://m.media-amazon.com/images/S/ssnap-msa/prod/runtimeConfig/android/com.amazon.mshop.core.cacheinvalidation.json numRetries:0
+08-28 13:41:35.897 25267 25510 W RemoteConfigProvider: Skipping cache update for com.amazon.mshop.core.cacheinvalidation: downloaded file is older than cached file
+08-28 13:41:35.898 25267 25515 W RemoteConfigProvider: Skipping cache update for com.amazon.mshop.kubersmartintent.config.prod: downloaded file is older than cached file
+08-28 13:41:36.407   793  7173 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+08-28 13:41:36.407   793  7173 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+08-28 13:41:36.408   793  7173 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+08-28 13:41:36.408   793  7173 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+08-28 13:41:36.409  6693  7177 V bt_stack: [VERBOSE1:btm_ble_gap.cc(1924)] btm_ble_process_ext_adv_pkt: bda=40:b7:5a:db:9b:a8
+08-28 13:41:36.409  6693  7177 V bt_stack: [VERBOSE1:btm_ble_gap.cc(1848)] btm_ble_process_adv_addr: bda=40:b7:5a:db:9b:a8
+08-28 13:41:36.409  6693  7177 V bt_stack: [VERBOSE1:btm_ble_gap.cc(2058)]  Waiting for scan response 40:b7:5a:db:9b:a8
+08-28 13:41:36.409  6693  7177 V bt_stack: [VERBOSE1:btm_ble_gap.cc(1924)] btm_ble_process_ext_adv_pkt: bda=40:b7:5a:db:9b:a8
+08-28 13:41:36.409  6693  7177 V bt_stack: [VERBOSE1:btm_ble_gap.cc(1848)] btm_ble_process_adv_addr: bda=40:b7:5a:db:9b:a8
+08-28 13:41:36.409  6693  7177 V bt_stack: [VERBOSE1:btm_inq.cc(1019)] BTM_InqDbRead: bd addr 40:b7:5a:db:9b:a8
+08-28 13:41:36.414  3237  6040 I NearbyDiscovery: (REDACTED) BloomFilterAdvManager: Detected bloom filter but too far away, ignoring. %sm, %s
+08-28 13:41:36.449   793  7173 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+08-28 13:41:36.449   793  7173 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+08-28 13:41:36.450  3015  3951 I LocationAccessPolicy: in.swiggy.android.instamart is aware of fine but the app-ops permission is specifically denied.
+08-28 13:41:36.470 25137 25184 E libc    : Access denied finding property "ro.vendor.df.effect.conflict"
+08-28 13:41:36.457 25137 25137 W DefaultDispatch: type=1400 audit(0.0:2019): avc: denied { read } for name="u:object_r:vendor_displayfeature_prop:s0" dev="tmpfs" ino=17608 scontext=u:r:untrusted_app:s0:c42,c257,c512,c768 tcontext=u:object_r:vendor_displayfeature_prop:s0 tclass=file permissive=0 app=in.swiggy.android.instamart
+08-28 13:41:36.471 25137 25184 E libc    : Access denied finding property "ro.vendor.knock.type"
+08-28 13:41:36.475 25137 25184 W FirebaseRemoteConfig: No value of type 'String' exists for parameter key 'android_certificates'.
+08-28 13:41:36.547   793  7173 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+08-28 13:41:36.547   793  7173 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+08-28 13:41:36.547   793  7173 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+08-28 13:41:36.549  6693  7177 V bt_stack: [VERBOSE1:btm_ble_gap.cc(1924)] btm_ble_process_ext_adv_pkt: bda=40:b7:5a:db:9b:a8
+08-28 13:41:36.549  6693  7177 V bt_stack: [VERBOSE1:btm_ble_gap.cc(1848)] btm_ble_process_adv_addr: bda=40:b7:5a:db:9b:a8
+08-28 13:41:36.549  6693  7177 V bt_stack: [VERBOSE1:btm_ble_gap.cc(2058)]  Waiting for scan response 40:b7:5a:db:9b:a8
+08-28 13:41:36.549  6693  7177 V bt_stack: [VERBOSE1:btm_ble_gap.cc(1924)] btm_ble_process_ext_adv_pkt: bda=40:b7:5a:db:9b:a8
+08-28 13:41:36.549  6693  7177 V bt_stack: [VERBOSE1:btm_ble_gap.cc(1848)] btm_ble_process_adv_addr: bda=40:b7:5a:db:9b:a8
+08-28 13:41:36.550  6693  7177 V bt_stack: [VERBOSE1:btm_inq.cc(1019)] BTM_InqDbRead: bd addr 40:b7:5a:db:9b:a8
+08-28 13:41:36.559  3237  6040 I NearbyDiscovery: (REDACTED) BloomFilterAdvManager: Detected bloom filter but too far away, ignoring. %sm, %s
+08-28 13:41:36.588   793  7173 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+08-28 13:41:36.588   793  7173 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+08-28 13:41:36.739   793  6963 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 

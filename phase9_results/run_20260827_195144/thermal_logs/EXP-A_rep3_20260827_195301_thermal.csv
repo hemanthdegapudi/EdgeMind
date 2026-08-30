@@ -1,4 +1,0 @@
-timestamp,elapsed_s,cpu_max_mc,battery_mc,cpu_max_c,battery_c,status
-2026-08-27 19:53:59,0,78000,32700,78.0,32.7,OK
-2026-08-27 19:54:04,5,84500,33500,84.5,33.5,WARN_HIGH
-2026-08-27 19:54:09,10,84100,34000,84.1,34.0,WARN_HIGH

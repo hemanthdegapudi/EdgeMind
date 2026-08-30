@@ -1,0 +1,152 @@
+[
+  {
+    "memory_before_load": {
+      "rss_kb": 119584,
+      "pss_kb": 40460,
+      "avail_kb": 2853212
+    },
+    "load_time_ms": 6096,
+    "memory_after_load": {
+      "rss_kb": 2197980,
+      "pss_kb": 2147447,
+      "avail_kb": 1522652
+    },
+    "tokens": 11,
+    "total_time_ms": 1983,
+    "ttft_ms": 872,
+    "decode_tps": 9.900990099009901,
+    "memory_after_generation": {
+      "rss_kb": 2139224,
+      "pss_kb": 2087821,
+      "avail_kb": 1517440
+    },
+    "memory_after_unload": {
+      "rss_kb": 1459552,
+      "pss_kb": 1408020,
+      "avail_kb": 1527248
+    },
+    "model_id": "deepseek-r1-distill-qwen-1.5b-q5km",
+    "iteration": 1,
+    "json_mode": false
+  },
+  {
+    "memory_before_load": {
+      "rss_kb": 1459700,
+      "pss_kb": 1408046,
+      "avail_kb": 1555212
+    },
+    "load_time_ms": 7127,
+    "memory_after_load": {
+      "rss_kb": 2287000,
+      "pss_kb": 2260120,
+      "avail_kb": 932436
+    },
+    "tokens": 211,
+    "total_time_ms": 20616,
+    "ttft_ms": 1363,
+    "decode_tps": 10.959331013348569,
+    "memory_after_generation": {
+      "rss_kb": 2234640,
+      "pss_kb": 2202672,
+      "avail_kb": 925680
+    },
+    "memory_after_unload": {
+      "rss_kb": 102020,
+      "pss_kb": 69228,
+      "avail_kb": 2896424
+    },
+    "model_id": "qwen3-1.7b-q4km",
+    "iteration": 2,
+    "json_mode": true
+  },
+  {
+    "memory_before_load": {
+      "rss_kb": 102304,
+      "pss_kb": 69083,
+      "avail_kb": 2900864
+    },
+    "load_time_ms": 6817,
+    "memory_after_load": {
+      "rss_kb": 2039452,
+      "pss_kb": 2028376,
+      "avail_kb": 1693076
+    },
+    "tokens": 11,
+    "total_time_ms": 1932,
+    "ttft_ms": 788,
+    "decode_tps": 9.615384615384615,
+    "memory_after_generation": {
+      "rss_kb": 2036880,
+      "pss_kb": 2021774,
+      "avail_kb": 1689244
+    },
+    "memory_after_unload": {
+      "rss_kb": 90280,
+      "pss_kb": 73060,
+      "avail_kb": 3011624
+    },
+    "model_id": "deepseek-r1-distill-qwen-1.5b-q5km",
+    "iteration": 3,
+    "json_mode": false
+  },
+  {
+    "memory_before_load": {
+      "rss_kb": 90744,
+      "pss_kb": 73436,
+      "avail_kb": 3011392
+    },
+    "load_time_ms": 7932,
+    "memory_after_load": {
+      "rss_kb": 2898380,
+      "pss_kb": 2897216,
+      "avail_kb": 1292204
+    },
+    "tokens": 192,
+    "total_time_ms": 19964,
+    "ttft_ms": 1231,
+    "decode_tps": 10.249292692040784,
+    "memory_after_generation": {
+      "rss_kb": 2921700,
+      "pss_kb": 2909393,
+      "avail_kb": 1276480
+    },
+    "memory_after_unload": {
+      "rss_kb": 2079856,
+      "pss_kb": 2067832,
+      "avail_kb": 1201640
+    },
+    "model_id": "qwen3-1.7b-q4km",
+    "iteration": 4,
+    "json_mode": true
+  },
+  {
+    "memory_before_load": {
+      "rss_kb": 2078488,
+      "pss_kb": 2066592,
+      "avail_kb": 1206732
+    },
+    "load_time_ms": 5758,
+    "memory_after_load": {
+      "rss_kb": 2314668,
+      "pss_kb": 2302004,
+      "avail_kb": 1960296
+    },
+    "tokens": 11,
+    "total_time_ms": 1744,
+    "ttft_ms": 600,
+    "decode_tps": 9.615384615384615,
+    "memory_after_generation": {
+      "rss_kb": 2319596,
+      "pss_kb": 2306933,
+      "avail_kb": 1957904
+    },
+    "memory_after_unload": {
+      "rss_kb": 80208,
+      "pss_kb": 67344,
+      "avail_kb": 3289800
+    },
+    "model_id": "deepseek-r1-distill-qwen-1.5b-q5km",
+    "iteration": 5,
+    "json_mode": false
+  }
+]

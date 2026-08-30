@@ -1,0 +1,147 @@
+=================================================
+EDGEMIND PHASE 10.2 VALIDATION
+=================================================
+
+Repository:
+411a3db
+
+Device:
+Redmi K20 Pro
+
+Android:
+API 30
+
+ABI:
+arm64-v8a
+
+MemoryGuard:
+3.0 GiB / 3221225472 bytes
+
+-------------------------------------------------
+BUILD
+-------------------------------------------------
+Build:
+PASS
+
+Installation:
+PASS
+
+Service:
+PASS
+
+-------------------------------------------------
+SAFETY GATES
+-------------------------------------------------
+MemoryGuard REJECT:
+PASS
+
+MemoryGuard ALLOW:
+BLOCKED
+
+Thermal SAFE:
+PASS
+
+-------------------------------------------------
+NATIVE INFERENCE
+-------------------------------------------------
+JNI:
+UNTESTED
+
+llama.cpp initialization:
+UNTESTED
+
+Model loading:
+UNTESTED
+
+Inference:
+UNTESTED
+
+-------------------------------------------------
+RUNTIME
+-------------------------------------------------
+3-run repeatability:
+UNTESTED
+
+Background inference:
+UNTESTED
+
+Screen-off inference:
+UNTESTED
+
+Thermal under inference:
+UNTESTED
+
+-------------------------------------------------
+PERFORMANCE
+-------------------------------------------------
+Model load time:
+UNAVAILABLE
+
+TTFT:
+UNAVAILABLE
+
+Generation throughput:
+UNAVAILABLE
+
+RAM before:
+UNAVAILABLE
+
+RAM after model:
+UNAVAILABLE
+
+-------------------------------------------------
+SECURITY
+-------------------------------------------------
+Production service exposure:
+REVIEW REQUIRED
+
+-------------------------------------------------
+OVERALL
+-------------------------------------------------
+PHASE 10.2:
+BLOCKED
+
+PRIMARY REMAINING BLOCKER:
+[DATA GAP: target device cannot currently produce a validated MemoryGuard ALLOW condition]
+=================================================
+
+Failure ID:
+P10.2-ENV-MEMORY
+
+Stage:
+MemoryGuard ALLOW
+
+Classification:
+A = Device/environment
+
+Expected:
+Device can achieve >= 3.0 GiB available memory to satisfy MemoryGuard ALLOW.
+
+Observed:
+Despite multiple cleanups (force-stopping background apps, trimming caches, and testing immediately after a clean reboot), the authoritative `ActivityManager.MemoryInfo.availMem` peaks at 2.99 GiB before dropping back to ~2.3-2.5 GiB. The `dumpsys meminfo` shows Free RAM > 3.1 GiB, but MemoryGuard correctly executes its intended logic using the `ActivityManager` API.
+
+Evidence:
+08-28 14:38:26.234 2684 2749 E InferenceForegroundService: Memory state is INSUFFICIENT (INSUFFICIENT). Engine initialization deferred — model load rejected. Minimum required: 3.0 GiB free.
+
+Root cause:
+PROVEN (Device environment naturally operates below the 3.0 GiB `ActivityManager` threshold, even when aggressively cleaned).
+
+Changes attempted:
+- Force stopped third-party and system apps
+- Trimmed system caches
+- Rebooted and ran tight loop to catch boot state
+
+Changes retained:
+None
+
+Changes reverted:
+None
+
+Why the failure does not justify broader architectural changes:
+The safety mechanism is functioning exactly as designed and rejecting a low memory condition as intended. Weakening the threshold to force a PASS would invalidate the safety constraints established in Phase 10.1. There is no defect in the `MemoryGuard` implementation itself (no unit conversion issues or logic errors).
+
+Smallest next action:
+Re-evaluate the 3.0 GiB threshold if `ActivityManager`'s conservative calculation (which excludes some cached memory) is determined to be too strict, or use a device with more available RAM for validation.
+
+STOP / CONTINUE:
+STOP

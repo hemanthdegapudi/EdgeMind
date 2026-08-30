@@ -1,0 +1,168 @@
+{
+  "deepseek-r1-distill-qwen-1.5b-q5km": [
+    {
+      "memory_before_load": {
+        "rss_kb": 124848,
+        "pss_kb": 40542,
+        "avail_kb": 2561396
+      },
+      "load_time_ms": 5545,
+      "memory_after_load": {
+        "rss_kb": 2127724,
+        "pss_kb": 2090279,
+        "avail_kb": 1239156
+      },
+      "tokens": 1008,
+      "total_time_ms": 119171,
+      "ttft_ms": 1232,
+      "decode_tps": 8.54679113779157,
+      "memory_after_generation": {
+        "rss_kb": 1636048,
+        "pss_kb": 1593677,
+        "avail_kb": 1283336
+      },
+      "memory_after_unload": {
+        "rss_kb": 1428432,
+        "pss_kb": 1385841,
+        "avail_kb": 1289740
+      }
+    },
+    {
+      "memory_before_load": {
+        "rss_kb": 1428720,
+        "pss_kb": 1385898,
+        "avail_kb": 1289036
+      },
+      "load_time_ms": 6819,
+      "memory_after_load": {
+        "rss_kb": 2149360,
+        "pss_kb": 2124020,
+        "avail_kb": 1360400
+      },
+      "tokens": 647,
+      "total_time_ms": 71880,
+      "ttft_ms": 742,
+      "decode_tps": 9.09499845370969,
+      "memory_after_generation": {
+        "rss_kb": 2060892,
+        "pss_kb": 2025187,
+        "avail_kb": 1357044
+      },
+      "memory_after_unload": {
+        "rss_kb": 1436320,
+        "pss_kb": 1400380,
+        "avail_kb": 1363960
+      }
+    },
+    {
+      "memory_before_load": {
+        "rss_kb": 1436764,
+        "pss_kb": 1400726,
+        "avail_kb": 1363608
+      },
+      "load_time_ms": 5138,
+      "memory_after_load": {
+        "rss_kb": 2327220,
+        "pss_kb": 2296851,
+        "avail_kb": 1487892
+      },
+      "tokens": 527,
+      "total_time_ms": 57557,
+      "ttft_ms": 581,
+      "decode_tps": 9.249508565009828,
+      "memory_after_generation": {
+        "rss_kb": 2316264,
+        "pss_kb": 2283519,
+        "avail_kb": 1547268
+      },
+      "memory_after_unload": {
+        "rss_kb": 1422084,
+        "pss_kb": 1389026,
+        "avail_kb": 1549536
+      }
+    }
+  ],
+  "qwen3-1.7b-q4km": [
+    {
+      "memory_before_load": {
+        "rss_kb": 1420140,
+        "pss_kb": 1388915,
+        "avail_kb": 1557004
+      },
+      "load_time_ms": 7844,
+      "memory_after_load": {
+        "rss_kb": 2503856,
+        "pss_kb": 2485055,
+        "avail_kb": 998492
+      },
+      "tokens": 275,
+      "total_time_ms": 28266,
+      "ttft_ms": 874,
+      "decode_tps": 10.039427570093459,
+      "memory_after_generation": {
+        "rss_kb": 2351032,
+        "pss_kb": 2326150,
+        "avail_kb": 996736
+      },
+      "memory_after_unload": {
+        "rss_kb": 94036,
+        "pss_kb": 69031,
+        "avail_kb": 2994960
+      }
+    },
+    {
+      "memory_before_load": {
+        "rss_kb": 94164,
+        "pss_kb": 69088,
+        "avail_kb": 2994984
+      },
+      "load_time_ms": 7951,
+      "memory_after_load": {
+        "rss_kb": 2865604,
+        "pss_kb": 2861392,
+        "avail_kb": 1363384
+      },
+      "tokens": 270,
+      "total_time_ms": 26804,
+      "ttft_ms": 646,
+      "decode_tps": 10.321890052756327,
+      "memory_after_generation": {
+        "rss_kb": 2785408,
+        "pss_kb": 2781907,
+        "avail_kb": 1389136
+      },
+      "memory_after_unload": {
+        "rss_kb": 79368,
+        "pss_kb": 74957,
+        "avail_kb": 3384856
+      }
+    },
+    {
+      "memory_before_load": {
+        "rss_kb": 79632,
+        "pss_kb": 75125,
+        "avail_kb": 3381480
+      },
+      "load_time_ms": 6816,
+      "memory_after_load": {
+        "rss_kb": 2925784,
+        "pss_kb": 2922580,
+        "avail_kb": 1443660
+      },
+      "tokens": 376,
+      "total_time_ms": 41653,
+      "ttft_ms": 597,
+      "decode_tps": 9.158222915042868,
+      "memory_after_generation": {
+        "rss_kb": 2915484,
+        "pss_kb": 2910977,
+        "avail_kb": 1429996
+      },
+      "memory_after_unload": {
+        "rss_kb": 77484,
+        "pss_kb": 73957,
+        "avail_kb": 3421196
+      }
+    }
+  ]
+}

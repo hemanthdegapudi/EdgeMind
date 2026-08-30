@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "static_info": {
+    "manufacturer": "Xiaomi",
+    "model": "Redmi K20 Pro",
+    "android_version": "11",
+    "kernel_version": "4.14.180-perf-g80e961c",
+    "build_fingerprint": "Xiaomi/raphaelin/raphaelin:11/RKQ1.200826.002/V12.5.1.0.RFKINXM:user/release-keys",
+    "total_ram": 5633892
+  },
+  "stats": {
+    "MemAvailable_min": 3499148,
+    "MemAvailable_max": 3514604,
+    "MemAvailable_mean": 3506200.8,
+    "MemAvailable_median": 3507816
+  },
+  "models": {
+    "DeepSeek": {
+      "exists": true,
+      "size": 1285494880,
+      "sha256": "5190cb74aef330f7d4cf6a6a06553248b0c5bf1054a455184bbe58c03437ba37"
+    },
+    "Qwen3": {
+      "exists": true,
+      "size": 1282439264,
+      "sha256": "d2387ca2dbfee2ffabce7120d3770dadca0b293052bc2f0e138fdc940d9bc7b5"
+    }
+  },
+  "anomalies": [],
+  "samples_count": 10
+}

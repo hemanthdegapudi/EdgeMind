@@ -1,0 +1,55 @@
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   llama.cpp (modified content)
+	modified:   phase9_results/thermal_logs/EXP-A_thermal_timeline.csv
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	aggregate_results.py
+	dump_ui.sh
+	edgemind-app/app/build.gradle.kts
+	edgemind-app/app/proguard-rules.pro
+	edgemind-app/app/src/main/AndroidManifest.xml
+	edgemind-app/app/src/main/java/com/edgemind/app/EdgeMindApplication.kt
+	edgemind-app/app/src/main/java/com/edgemind/app/service/
+	edgemind-app/app/src/main/java/com/edgemind/app/thermal/
+	edgemind-app/app/src/main/res/
+	edgemind-app/build.gradle.kts
+	edgemind-app/gradle.properties
+	edgemind-app/gradle/
+	edgemind-app/gradlew
+	edgemind-app/install_helper.sh
+	edgemind-app/settings.gradle.kts
+	generate_report.py
+	install_final.sh
+	install_grid.sh
+	phase10_4_report.md
+	phase10_5_threshold_validation/
+	phase10_evidence/
+	phase9_results/analysis/
+	phase9_results/analyze_results.py
+	phase9_results/run_20260828_132241/
+	phase9_results/run_20260828_132836/
+	reboot_and_launch.sh
+	repro_results/
+	run.pid
+	run_benchmark.pid
+	run_install.sh
+	run_install_keys.sh
+	screen.png
+	test_inference.sh
+	trackA_measure.sh
+	uidump.xml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+commit a9058c0ee8afa593c982bff10f750c5d63a33c08
+Author: hemanthdegapudi <hemanthreddydegapudi18@gmail.com>
+Date:   Fri Aug 28 15:07:33 2026 +0530
+
+    Phase 10.4: Lower MemoryGuard threshold to 2.2 GiB

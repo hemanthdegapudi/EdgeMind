@@ -1,0 +1,41 @@
+{
+  "campaign_id": "20260829_212631",
+  "timestamp": "2026-08-29T21:26:31.292455",
+  "completed_tests": [
+    "GATE_1_BASELINE",
+    "GATE_2_INDEPENDENT",
+    "GATE_3_SWITCHING"
+  ],
+  "failed_tests": [
+    "GATE_2_INDEPENDENT",
+    "GATE_2_INDEPENDENT",
+    "GATE_2_INDEPENDENT"
+  ],
+  "blocked_tests": [],
+  "operator_interventions": 0,
+  "stages": {
+    "GATE_1_BASELINE": {
+      "gate": 1,
+      "start": "2026-08-29T21:26:31.292455",
+      "end": "2026-08-29T22:48:43.991443",
+      "status": "PASS",
+      "device": "Xiaomi Redmi K20 Pro",
+      "build": "11 (Xiaomi/raphaelin/raphaelin:11/RKQ1.200826.002/V12.5.1.0.RFKINXM:user/release-keys)",
+      "campaign_id": "20260829_212631",
+      "number_of_samples": 10,
+      "operator_interventions": 0,
+      "timeouts": 0,
+      "anomalies": []
+    },
+    "GATE_2_INDEPENDENT": {
+      "status": "FAILED"
+    },
+    "GATE_3_SWITCHING": {
+      "status": "PASSED"
+    },
+    "synthetic_checkpoint": {
+      "status": "PASSED",
+      "last_checkpoint": "validation/checkpoints/synthetic_checkpoint_checkpoint.json"
+    }
+  }
+}
